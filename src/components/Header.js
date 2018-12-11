@@ -4,12 +4,7 @@ import PropTypes from 'prop-types'
 const Header = props => (
   <header id="header" className="alt">
     <nav>
-      <a
-        href="#"
-        className="menu-link"
-        onClick={props.onToggleMenu}
-        href="javascript:;"
-      >
+      <a className="menu-link" onClick={props.onToggleMenu} href="javascript:;">
         Menu
       </a>
     </nav>
