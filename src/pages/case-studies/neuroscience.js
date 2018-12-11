@@ -4,7 +4,6 @@ import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
 
 import caseStudyImg from '../../assets/images/neuroscience-case-study.jpg'
-import caseStudyArchitecture from '../../assets/images/mucho-case-study-architecture.svg'
 
 const CaseStudy = props => (
   <Layout>

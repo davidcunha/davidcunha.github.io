@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
@@ -393,6 +394,13 @@ const About = props => (
           </li>
           <li>How can I make this code work?</li>
           <li>How can I improve this code?</li>
+        </ul>
+        <ul className="actions">
+          <li>
+            <Link to="/case-studies" className="button special">
+              View Case Studies
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="inner">

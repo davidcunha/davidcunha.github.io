@@ -261,6 +261,13 @@ const Process = props => (
           </a>
           .
         </p>
+        <ul className="actions">
+          <li>
+            <Link to="/case-studies" className="button special">
+              View Case Studies
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="inner">
         <header className="major">
