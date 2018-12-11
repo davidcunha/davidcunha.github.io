@@ -18,7 +18,7 @@
 		top: -3.25em;
 
 		&:after {
-			background-color: _palette(accent2);
+			background-color: _palette(bg);
 			content: '';
 			display: block;
 			height: 100%;
@@ -103,13 +103,7 @@
 		&.style2 { &:after { background-color: _palette(accent2); } }
 
 		.body.is-loading & {
-			&:after {
-				opacity: 1.0;
-			}
-
 			> .inner {
-				@include vendor('filter', 'blur(0.125em)');
-				@include vendor('transform', 'translateX(-0.5em)');
 				opacity: 0;
 			}
 		}

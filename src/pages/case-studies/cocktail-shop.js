@@ -226,7 +226,7 @@ const CaseStudy = props => (
           frontend and backend APIs.
         </p>
         <p>
-          <img src={caseStudyArchitecture} />
+          <img src={caseStudyArchitecture} alt="Cocktail Shop Architecture" />
         </p>
       </div>
     </div>

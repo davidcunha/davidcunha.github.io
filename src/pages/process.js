@@ -13,7 +13,7 @@ const Process = props => (
       <meta name="description" content="Process" />
     </Helmet>
 
-    <Banner title="Process" bgImg={process} bgColor="#7c7c80" />
+    <Banner title="Process" bgImg={process} />
 
     <div id="main">
       <div className="inner">
@@ -408,7 +408,9 @@ const Process = props => (
           Feel free to comment, clap, and{' '}
           <a href="mailto:davidgoncalvescunha@gmail.com">mail me here</a>, if
           you want to discuss more about a posted topic{' '}
-          <span role="img">🤙</span>
+          <span role="img" aria-label="emoji">
+            🤙
+          </span>
         </p>
       </div>
     </div>

@@ -11,8 +11,8 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         start_url: '/',
-        background_color: '#ffffff',
-        theme_color: '#ffffff',
+        background_color: '#FCFCFC',
+        theme_color: '#FCFCFC',
         display: 'minimal-ui',
         icon: 'src/assets/images/computer-icon.png', // This path is relative to the root of the site.
       },

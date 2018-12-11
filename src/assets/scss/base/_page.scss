@@ -30,3 +30,16 @@
 			}
 
 	}
+
+	.body.is-loading {
+		#banner,
+		#main {
+			@include vendor('filter', 'blur(0.125em)');
+		}
+
+		#banner {
+			> .inner {
+				opacity: 0;
+			}
+		}
+	}

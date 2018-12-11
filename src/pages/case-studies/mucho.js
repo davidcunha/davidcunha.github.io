@@ -220,7 +220,7 @@ const CaseStudy = props => (
           and Elasticsearch for the search engine.
         </p>
         <p>
-          <img src={caseStudyArchitecture} />
+          <img src={caseStudyArchitecture} alt="Mucho Architecture" />
         </p>
       </div>
     </div>

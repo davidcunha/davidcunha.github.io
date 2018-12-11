@@ -16,7 +16,7 @@ const CaseStudies = props => (
       <meta name="description" content="Case Studies" />
     </Helmet>
 
-    <Banner title="Case Studies" bgImg={caseStudies} bgColor="#7c7c80" />
+    <Banner title="Case Studies" bgImg={caseStudies} />
 
     <div id="main">
       <section id="one" className="spotlights">

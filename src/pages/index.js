@@ -52,7 +52,7 @@ class HomeIndex extends React.Component {
             content="black-translucent"
           />
           <meta name="application-name" content="davidcunha.xyz" />
-          <meta name="msapplication-TileColor" content="#ffffff" />
+          <meta name="msapplication-TileColor" content="#FCFCFC" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-127658443-1"

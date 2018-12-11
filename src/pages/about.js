@@ -23,11 +23,20 @@ const About = props => (
         </p>
         <p>I love to:</p>
         <p>
-          <span role="img">👥</span> Help Developers and Teams
+          <span role="img" aria-label="emoji">
+            👥
+          </span>{' '}
+          Help Developers and Teams
           <br />
-          <span role="img">👨‍💻</span> Write code
+          <span role="img" aria-label="emoji">
+            👨‍💻
+          </span>{' '}
+          Write code
           <br />
-          <span role="img">✈️</span> Travel and experience new things
+          <span role="img" aria-label="emoji">
+            ✈️
+          </span>{' '}
+          Travel and experience new things
           <br />
         </p>
       </div>
@@ -87,13 +96,19 @@ const About = props => (
           <strong>Cloud Computing</strong> where I met brilliant folks in all
           over Europe from whom I learned fundamental concepts for building
           computing resources’ allocation recommendation algorithms - fancy
-          schmancy <span role="img">😆</span>. However, none of my efforts were
-          targeted to build actual products that normal people would use.
-          Believe me, R&amp;D is paramount for brainstorming and delivering,
-          today, what could be tomorrow’s products. However, at that time, what
-          I really wanted was to solve real problems from end-users and to be
-          part of the delivery pipeline of an <strong>Agile</strong> team{' '}
-          <span role="img">🚀</span>
+          schmancy{' '}
+          <span role="img" aria-label="emoji">
+            😆
+          </span>
+          . However, none of my efforts were targeted to build actual products
+          that normal people would use. Believe me, R&amp;D is paramount for
+          brainstorming and delivering, today, what could be tomorrow’s
+          products. However, at that time, what I really wanted was to solve
+          real problems from end-users and to be part of the delivery pipeline
+          of an <strong>Agile</strong> team{' '}
+          <span role="img" aria-label="emoji">
+            🚀
+          </span>
         </p>
         <p>
           <strong>
@@ -142,10 +157,13 @@ const About = props => (
               Node.js
             </a>
           </strong>{' '}
-          was the new kid on the block <span role="img">😎</span>. Non-blocking
-          IO, real-time communications, capable of handling a great number of
-          simultaneous connections with high throughput. After consuming content
-          from{' '}
+          was the new kid on the block{' '}
+          <span role="img" aria-label="emoji">
+            😎
+          </span>
+          . Non-blocking IO, real-time communications, capable of handling a
+          great number of simultaneous connections with high throughput. After
+          consuming content from{' '}
           <a
             href="https://twitter.com/substack"
             target="_blank"
@@ -190,8 +208,11 @@ const About = props => (
           <strong>JavaScript ecosystem grew exponentially</strong>, and you can
           now code a full-stack application with only one language (if you put
           aside SQL, markups, and stylesheets). Isn’t it awesome?{' '}
-          <span role="img">🎉</span> Been sometime now that I can say that
-          JavaScript is my daily programming language.
+          <span role="img" aria-label="emoji">
+            🎉
+          </span>{' '}
+          Been sometime now that I can say that JavaScript is my daily
+          programming language.
         </p>
         <p>
           For beginners or even seasoned developers, important language details
@@ -313,7 +334,10 @@ const About = props => (
           These books really opened my mind to entrepreneurship, management,
           productivity, the art of keeping it simple, and how to work as a
           Startup, which makes sense, as I’m currently working mainly for
-          Startups‍ <span role="img">😃</span>
+          Startups‍{' '}
+          <span role="img" aria-label="emoji">
+            😃
+          </span>
         </p>
         <p>
           Although bear that none of the concepts learned are silver bullets.
@@ -401,7 +425,10 @@ const About = props => (
           >
             Email
           </a>{' '}
-          to schedule it <span role="img">🤙</span>
+          to schedule it{' '}
+          <span role="img" aria-label="emoji">
+            🤙
+          </span>
         </p>
       </div>
     </div>
