@@ -4,6 +4,7 @@
 		@include icon;
 		border-bottom: none;
 		position: relative;
+		font-size: 20pt;
 
 		> .label {
 			display: none;
@@ -18,7 +19,7 @@
 				height: 2em;
 				line-height: 2em;
 				text-align: center;
-				width: 2em;
+				width: 1em;
 			}
 		}
 	}
