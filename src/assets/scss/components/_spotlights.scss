@@ -8,7 +8,6 @@
 		}
 
 		> section {
-			border-top: 1px solid _palette(border);
 			@include vendor('display', 'flex');
 			@include vendor('flex-direction', 'row');
 
@@ -18,7 +17,7 @@
 				border-radius: 0;
 				display: block;
 				position: relative;
-				width: 30%;
+				width: 45%;
 
 				img {
 					border-radius: 0;
@@ -44,8 +43,12 @@
 				@include vendor('flex-direction', 'column');
 				@include vendor('justify-content', 'center');
 				@include vendor('align-items', 'center');
-				@include padding(2em, 6em);
-				width: 70%;
+				@include padding(2em, 0, (2em, 0, 2em, 6em));
+				width: 55%;
+
+			    @include breakpoint(medium) {
+					@include padding(2em, 6em);
+				}
 
 				> .inner {
 					margin: 0 auto;
@@ -59,18 +62,7 @@
 
 				> .content {
 					@include vendor('align-items', 'flex-end');
-				}
-			}
-		}
-
-		@include breakpoint(xlarge) {
-			> section {
-				> .image {
-					width: 40%;
-				}
-
-				> .content {
-					width: 60%;
+					@include padding(2em, 0, (2em, 6em, 2em, 0));
 				}
 			}
 		}
@@ -96,7 +88,7 @@
 				}
 
 				> .content {
-					@include padding(4em, 3em);
+					@include padding(4em, 3em, (0,0,0,0), true);
 					width: 100%;
 				}
 			}
@@ -105,7 +97,7 @@
 		@include breakpoint(small) {
 			> section {
 				> .content {
-					@include padding(3em, 1.5em);
+					@include padding(3em, 1.5em, (0,0,0,0), true);
 				}
 			}
 		}

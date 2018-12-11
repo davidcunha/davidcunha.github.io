@@ -6,8 +6,16 @@
 		}
 	}
 
-	section.case-study .content {
-		margin: 2em 0;
+	section.case-study {
+		margin: 8em auto;
+		max-width: _size(inner);
+		width: calc(100% - 6em);
+
+		@include breakpoint(medium) {
+			margin: auto;
+			max-width: 100%;
+			width: 100%;
+		}
 	}
 
 	header {

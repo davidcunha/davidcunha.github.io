@@ -21,7 +21,7 @@ const CaseStudies = props => (
     <div id="main">
       <section id="one" className="spotlights">
         <section className="case-study">
-          <Link to="/case-studies" className="image">
+          <Link to="/case-studies/mucho" className="image">
             <div style={{ backgroundImage: `url(${caseStudy1})` }} />
           </Link>
           <div className="content">
@@ -77,7 +77,7 @@ const CaseStudies = props => (
           </div>
         </section>
         <section className="case-study">
-          <Link to="/case-studies" className="image">
+          <Link to="/case-studies/cocktail-shop" className="image">
             <div style={{ backgroundImage: `url(${caseStudy3})` }} />
           </Link>
           <div className="content">
