@@ -70,7 +70,7 @@ class HomeIndex extends React.Component {
           </script>
         </Helmet>
 
-        <Banner title="Hi, my name is David" img={about}>
+        <Banner title="Hi, my name is David" bgImg={about}>
           <div className="content">
             <p>
               I’m a professional Software Engineer and Scrum Master
@@ -79,8 +79,8 @@ class HomeIndex extends React.Component {
             </p>
             <ul className="actions">
               <li>
-                <Link to="/about">
-                  <a className="button next">About me</a>
+                <Link to="/about" className="button next">
+                  About me
                 </Link>
               </li>
             </ul>

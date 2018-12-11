@@ -13,7 +13,7 @@ const Process = props => (
       <meta name="description" content="Process" />
     </Helmet>
 
-    <Banner title="Process" img={process} />
+    <Banner title="Process" bgImg={process} bgColor="#00f" />
 
     <div id="main">
       <div className="inner">
@@ -73,12 +73,9 @@ const Process = props => (
           <h3>Software Stack</h3>
         </header>
         <p>
-          As you can read a bit more{' '}
-          <Link to="/about">
-            <a>about me</a>
-          </Link>
-          , I had the opportunity to work on several projects from frontend to
-          backend and distributed computing.
+          As you can read a bit more <Link to="/about">about me</Link>, I had
+          the opportunity to work on several projects from frontend to backend
+          and distributed computing.
         </p>
         <p>My current stack:</p>
         <ul>

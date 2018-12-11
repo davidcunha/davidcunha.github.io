@@ -12,7 +12,7 @@ const About = props => (
       <meta name="description" content="About" />
     </Helmet>
 
-    <Banner title="About" img={about} />
+    <Banner title="About" bgImg={about} />
 
     <div id="main">
       <div className="inner">

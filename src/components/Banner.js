@@ -1,10 +1,20 @@
 import React from 'react'
+import styled from 'styled-components'
 
-const Banner = props => (
-  <section
+const Banner = styled.div`
+  background-image: url(${props => props.bgImg});
+  &:after {
+    background-color: ${props =>
+      props.bgColor ? props.bgColor : '#000000'} !important;
+  }
+`
+
+export default props => (
+  <Banner
     id="banner"
     className="major"
-    style={{ backgroundImage: `url(${props.img})` }}
+    bgImg={props.bgImg}
+    bgColor={props.bgColor}
   >
     <div className="inner">
       <header className="major">
@@ -12,7 +22,5 @@ const Banner = props => (
       </header>
       {props.children}
     </div>
-  </section>
+  </Banner>
 )
-
-export default Banner
