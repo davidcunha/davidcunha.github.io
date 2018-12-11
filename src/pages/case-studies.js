@@ -38,8 +38,8 @@ const CaseStudies = props => (
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/case-studies" className="button special disabled">
-                    View Case Study (SOON!)
+                  <Link to="/case-studies/mucho" className="button special">
+                    View Case Study
                   </Link>
                 </li>
               </ul>
@@ -95,8 +95,11 @@ const CaseStudies = props => (
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/case-studies" className="button special disabled">
-                    View Case Study (SOON!)
+                  <Link
+                    to="/case-studies/cocktail-shop"
+                    className="button special"
+                  >
+                    View Case Study
                   </Link>
                 </li>
               </ul>
