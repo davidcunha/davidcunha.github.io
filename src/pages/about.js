@@ -46,6 +46,22 @@ const About = props => (
         </header>
         <div className="quote">
           <blockquote>
+            “I've had the pleasure of growing our business alongside David for
+            the past 4 years in Mucho, seeing him grow as a developer and into
+            his different endeavours. David is extremely diligent, clear and
+            productive. He is naturally curious and seeks new challenges,
+            working at his best when he sees genuine issues that new
+            technologies can solve. As a developer, he also has a clear
+            understanding of how to weight the business benefits tech work can
+            have. He is invested in people, trying to understand where people
+            come from, which makes him a great team member.”
+          </blockquote>
+          <div className="author">
+            <strong>Juliana Zarate - CEO and Co-Founder @ Mucho</strong>
+          </div>
+        </div>
+        <div className="quote">
+          <blockquote>
             “Working with David, it’s just a pleasure! I can easily say that he
             is the person that I most respect professionally - hardworking,
             talented, caring, perfectionist, trustworthy, humble - The truth is

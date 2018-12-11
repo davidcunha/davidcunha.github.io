@@ -33,8 +33,8 @@ const CaseStudies = props => (
                 Mucho provides a personalized experience for grocery shopping
                 with inspirational recipes contributed by a trusted community of
                 foodies. With a few clicks, ingredients for recipes and
-                breakfast & snacks are ordered, and a selected supermarket will
-                delivery the order to the customer’s doorstep.
+                breakfast &amp; snacks are ordered, and a selected supermarket
+                will delivery the order to the customer’s doorstep.
               </p>
               <ul className="actions">
                 <li>
