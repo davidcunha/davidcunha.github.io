@@ -5,7 +5,7 @@ const Banner = styled.div`
   background-image: url(${props => props.bgImg});
   &:after {
     background-color: ${props =>
-      props.bgColor ? props.bgColor : '#000000'} !important;
+      props.bgColor ? props.bgColor : '#7c7c80'} !important;
   }
 `
 

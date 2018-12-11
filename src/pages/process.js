@@ -13,7 +13,7 @@ const Process = props => (
       <meta name="description" content="Process" />
     </Helmet>
 
-    <Banner title="Process" bgImg={process} bgColor="#00f" />
+    <Banner title="Process" bgImg={process} bgColor="#7c7c80" />
 
     <div id="main">
       <div className="inner">

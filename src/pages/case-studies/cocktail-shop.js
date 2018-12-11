@@ -13,7 +13,7 @@ const CaseStudy = props => (
       <meta name="description" content="Cocktail Shop" />
     </Helmet>
 
-    <Banner title="Cocktail Shop" bgImg={caseStudyImg} bgColor="#61CAD1" />
+    <Banner title="Cocktail Shop" bgImg={caseStudyImg} bgColor="#7c7c80" />
 
     <div id="main" className="case-study">
       <div className="inner">
