@@ -45,7 +45,7 @@ const About = props => (
         <header className="major">
           <h3>Testimonials</h3>
         </header>
-        <div className="quote">
+        <p className="quote">
           <blockquote>
             “I've had the pleasure of growing our business alongside David for
             the past 4 years in Mucho, seeing him grow as a developer and into
@@ -60,8 +60,8 @@ const About = props => (
           <div className="author">
             <strong>Juliana Zarate - CEO and Co-Founder @ Mucho</strong>
           </div>
-        </div>
-        <div className="quote">
+        </p>
+        <p className="quote">
           <blockquote>
             “Working with David, it’s just a pleasure! I can easily say that he
             is the person that I most respect professionally - hardworking,
@@ -74,8 +74,8 @@ const About = props => (
           <div className="author">
             <strong>Ricardo Parente - CEO @ PICUS.</strong>
           </div>
-        </div>
-        <div className="quote">
+        </p>
+        <p className="quote">
           <blockquote>
             “I have been working, for some time now, with David in some side
             projects and own ideas of ours. I have to say it’s an absolute joy
@@ -88,7 +88,17 @@ const About = props => (
           <div className="author">
             <strong>Rui Peres - Engineering Manager @ Babylon Health</strong>
           </div>
-        </div>
+        </p>
+        <br />
+        <p>
+          <ul className="actions">
+            <li>
+              <Link to="/case-studies" className="button special">
+                View Case Studies
+              </Link>
+            </li>
+          </ul>
+        </p>
       </div>
       <div className="inner">
         <header className="major">
