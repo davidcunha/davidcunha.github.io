@@ -1,25 +1,16 @@
 import React from 'react'
 
 const Banner = props => (
-  <section id="banner" className="major">
+  <section
+    id="banner"
+    className="major"
+    style={{ backgroundImage: `url(${props.img})` }}
+  >
     <div className="inner">
       <header className="major">
-        <h1>Hi, my name is David</h1>
+        <h1>{props.title}</h1>
       </header>
-      <div className="content">
-        <p>
-          I’m a professional Software Engineer and Scrum Master
-          <br />
-          with more than 6 years of experience based in sunny Portugal.
-        </p>
-        <ul className="actions">
-          <li>
-            <a href="/about" className="button next">
-              About me
-            </a>
-          </li>
-        </ul>
-      </div>
+      {props.children}
     </div>
   </section>
 )

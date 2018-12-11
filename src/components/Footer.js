@@ -8,6 +8,7 @@ const Footer = props => (
           <a
             href="https://www.instagram.com/davidcunha.xyz"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon alt fa-instagram"
           >
             <span className="label">Instagram</span>
@@ -17,6 +18,7 @@ const Footer = props => (
           <a
             href="https://github.com/davidcunha"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon alt fa-github"
           >
             <span className="label">GitHub</span>
@@ -26,6 +28,7 @@ const Footer = props => (
           <a
             href="https://medium.com/@_davidcunha"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon alt fa-medium"
           >
             <span className="label">Medium</span>
@@ -35,6 +38,7 @@ const Footer = props => (
           <a
             href="https://twitter.com/_davidcunha"
             target="_blank"
+            rel="noopener noreferrer"
             className="icon alt fa-twitter"
           >
             <span className="label">Twitter</span>

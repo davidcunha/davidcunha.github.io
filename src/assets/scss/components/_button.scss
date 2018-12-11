@@ -1,9 +1,3 @@
-///
-/// Forty by HTML5 UP
-/// html5up.net | @ajlkn
-/// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-///
-
 /* Button */
 
 	input[type="submit"],
@@ -109,17 +103,14 @@
 		}
 
 		&.special {
-			background-color: _palette(fg-bold);
-			box-shadow: none;
+			background-color: _palette(fg);
+			box-shadow: inset 0 0 0 2px _palette(bg);
 			color: _palette(bg);
 
 			&:hover, &:active {
-				background-color: _palette(highlight);
-				color: _palette(bg) !important;
-			}
-
-			&:active {
-				background-color: desaturate(darken(_palette(highlight), 15), 5);
+				background-color: _palette(bg);
+				box-shadow: inset 0 0 0 2px _palette(bg);
+				color: _palette(fg) !important;
 			}
 		}
 

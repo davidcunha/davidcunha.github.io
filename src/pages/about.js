@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
-import BannerPage from '../components/BannerPage'
+import Banner from '../components/Banner'
 
-import about from '../assets/images/banner.jpg'
+import about from '../assets/images/about.jpg'
 
 const About = props => (
   <Layout>
@@ -13,7 +12,7 @@ const About = props => (
       <meta name="description" content="About" />
     </Helmet>
 
-    <BannerPage title="About" img={about} />
+    <Banner title="About" img={about} />
 
     <div id="main">
       <section id="one">
@@ -25,11 +24,11 @@ const About = props => (
           </p>
           <p>I love to:</p>
           <p>
-            👥 Help Developers and Teams
+            <span role="img">👥</span> Help Developers and Teams
             <br />
-            👨‍💻 Write code
+            <span role="img">👨‍💻</span> Write code
             <br />
-            ✈️ Travel and experience new things
+            <span role="img">✈️</span> Travel and experience new things
             <br />
           </p>
         </div>
@@ -89,12 +88,13 @@ const About = props => (
             <strong>Cloud Computing</strong> where I met brilliant folks in all
             over Europe from whom I learned fundamental concepts for building
             computing resources’ allocation recommendation algorithms - fancy
-            schmancy 😆. However, none of my efforts were targeted to build
-            actual products that normal people would use. Believe me, R&amp;D is
-            paramount for brainstorming and delivering, today, what could be
-            tomorrow’s products. However, at that time, what I really wanted was
-            to solve real problems from end-users and to be part of the delivery
-            pipeline of an <strong>Agile</strong> team 🚀
+            schmancy <span role="img">😆</span>. However, none of my efforts
+            were targeted to build actual products that normal people would use.
+            Believe me, R&amp;D is paramount for brainstorming and delivering,
+            today, what could be tomorrow’s products. However, at that time,
+            what I really wanted was to solve real problems from end-users and
+            to be part of the delivery pipeline of an <strong>Agile</strong>{' '}
+            team <span role="img">🚀</span>
           </p>
           <p>
             <strong>
@@ -106,7 +106,11 @@ const About = props => (
             opportunity to meet founders from Startups that aimed to build
             sustainable businesses from their dreams. Back in the day,{' '}
             <strong>
-              <a href="https://rubyonrails.org/" target="_blank">
+              <a
+                href="https://rubyonrails.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Ruby on Rails
               </a>
             </strong>{' '}
@@ -134,26 +138,47 @@ const About = props => (
           <p>
             At that time{' '}
             <strong>
-              <a href="https://nodejs.org/" target="_blank">
+              <a
+                href="https://nodejs.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Node.js
               </a>
             </strong>{' '}
-            was the new kid on the block 😎. Non-blocking IO, real-time
-            communications, capable of handling a great number of simultaneous
-            connections with high throughput. After consuming content from{' '}
-            <a href="https://twitter.com/substack" target="_blank">
+            was the new kid on the block <span role="img">😎</span>.
+            Non-blocking IO, real-time communications, capable of handling a
+            great number of simultaneous connections with high throughput. After
+            consuming content from{' '}
+            <a
+              href="https://twitter.com/substack"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @substack
             </a>
             ,{' '}
-            <a href="https://twitter.com/mikeal" target="_blank">
+            <a
+              href="https://twitter.com/mikeal"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @mikeal
             </a>
             ,{' '}
-            <a href="https://twitter.com/izs" target="_blank">
+            <a
+              href="https://twitter.com/izs"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @izs
             </a>{' '}
             or{' '}
-            <a href="https://twitter.com/dshaw" target="_blank">
+            <a
+              href="https://twitter.com/dshaw"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @dshaw
             </a>
             , I felt mesmerized with what Node could be for the future web
@@ -168,9 +193,9 @@ const About = props => (
             In the last years, the{' '}
             <strong>JavaScript ecosystem grew exponentially</strong>, and you
             can now code a full-stack application with only one language (if you
-            put aside SQL, markups, and stylesheets). Isn’t it awesome? 🎉 Been
-            sometime now that I can say that JavaScript is my daily programming
-            language.
+            put aside SQL, markups, and stylesheets). Isn’t it awesome?{' '}
+            <span role="img">🎉</span> Been sometime now that I can say that
+            JavaScript is my daily programming language.
           </p>
           <p>
             For beginners or even seasoned developers, important language
@@ -178,16 +203,25 @@ const About = props => (
             <a
               href="https://github.com/getify/You-Dont-Know-JS"
               target="_blank"
+              rel="noopener noreferrer"
             >
               You-Dont-Know-JS
             </a>{' '}
             by{' '}
-            <a href="https://twitter.com/getify" target="_blank">
+            <a
+              href="https://twitter.com/getify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @getify
             </a>{' '}
             you’ll start to get it. Go read it, select the chapters that you
             most want to learn about,{' '}
-            <a href="https://twitter.com/getify" target="_blank">
+            <a
+              href="https://twitter.com/getify"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               @getify
             </a>
             ’s writing is insightful and full of in-depth examples.
@@ -212,6 +246,7 @@ const About = props => (
                 <a
                   href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Lean Startup
                 </a>
@@ -223,6 +258,7 @@ const About = props => (
                 <a
                   href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Zero to One
                 </a>
@@ -234,6 +270,7 @@ const About = props => (
                 <a
                   href="https://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Scrum: The Art of Doing Twice the Work in Half the Time
                 </a>
@@ -242,7 +279,11 @@ const About = props => (
             </li>
             <li>
               <strong>
-                <a href="http://www.gv.com/sprint/" target="_blank">
+                <a
+                  href="http://www.gv.com/sprint/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Design Sprint
                 </a>
               </strong>{' '}
@@ -253,6 +294,7 @@ const About = props => (
                 <a
                   href="https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   The Mythical Man-Month
                 </a>
@@ -264,6 +306,7 @@ const About = props => (
                 <a
                   href="https://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Business Model Generation
                 </a>
@@ -275,7 +318,7 @@ const About = props => (
             These books really opened my mind to entrepreneurship, management,
             productivity, the art of keeping it simple, and how to work as a
             Startup, which makes sense, as I’m currently working mainly for
-            Startups‍ 😃
+            Startups‍ <span role="img">😃</span>
           </p>
           <p>
             Although bear that none of the concepts learned are silver bullets.
@@ -327,7 +370,11 @@ const About = props => (
             <li>Scrum</li>
             <li>Rapid development with Ruby on Rails</li>
             <li>
-              <a href="https://jschool.io/" target="_blank">
+              <a
+                href="https://jschool.io/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 JavaScript and Node.js introduction
               </a>
             </li>
@@ -339,7 +386,11 @@ const About = props => (
             <li>Web fundamentals - HTML, CSS, JavaScript, HTTP</li>
           </ul>
           <p>
-            <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank">
+            <a
+              href="mailto:davidgoncalvescunha@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Mail me here
             </a>{' '}
             for pricing, and I’ll be very happy to help you, your team or your
@@ -349,10 +400,14 @@ const About = props => (
             Ah! And every weekday, I’m available for a direct or remote
             30-minute free session between 18:00-20:00 (GMT). Just contact me
             via{' '}
-            <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank">
+            <a
+              href="mailto:davidgoncalvescunha@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Email
             </a>{' '}
-            to schedule it 🤙
+            to schedule it <span role="img">🤙</span>
           </p>
         </div>
       </section>

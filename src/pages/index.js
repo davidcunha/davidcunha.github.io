@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
+import about from '../assets/images/about.jpg'
 import process from '../assets/images/process.jpg'
 import caseStudies from '../assets/images/case-studies.jpg'
 
@@ -69,7 +70,22 @@ class HomeIndex extends React.Component {
           </script>
         </Helmet>
 
-        <Banner />
+        <Banner title="Hi, my name is David" img={about}>
+          <div className="content">
+            <p>
+              I’m a professional Software Engineer and Scrum Master
+              <br />
+              with more than 6 years of experience based in sunny Portugal.
+            </p>
+            <ul className="actions">
+              <li>
+                <Link to="/about">
+                  <a className="button next">About me</a>
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </Banner>
 
         <div id="main">
           <section id="one" className="tiles">
