@@ -47,7 +47,7 @@ const CaseStudies = props => (
           </div>
         </section>
         <section className="case-study">
-          <Link to="/case-studies" className="image">
+          <Link to="/case-studies/neuroscience" className="image">
             <div style={{ backgroundImage: `url(${caseStudy2})` }} />
           </Link>
           <div className="content">
@@ -59,17 +59,19 @@ const CaseStudies = props => (
                 Neuroscience (client’s name and website disclosed) were two R&D
                 projects that solved distinctive problems through digital
                 therapeutic solutions: Neurofeedback and Neurogames.
-                Neurofeedback (NFB) had as primary objective to innovate the
-                standard process of assessing patient’s brainwave activity EEG
+                Neurofeedback had as primary objective to innovate the standard
+                process of assessing patient’s brainwave activity EEG
                 (electroencephalogram) biofeedback. On the other hand,
-                Neurogames (NG) was state of the art applied methodology that
-                used HTML5 games to assess and improve patient’s brain
-                functions.
+                Neurogames was state of the art applied methodology that used
+                HTML5 games to assess and improve patient’s brain functions.
               </p>
               <ul className="actions">
                 <li>
-                  <Link to="/case-studies" className="button special disabled">
-                    View Case Study (SOON!)
+                  <Link
+                    to="/case-studies/neuroscience"
+                    className="button special"
+                  >
+                    View Case Study
                   </Link>
                 </li>
               </ul>
