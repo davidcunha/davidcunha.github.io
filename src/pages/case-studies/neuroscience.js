@@ -61,10 +61,10 @@ const CaseStudy = props => (
           microcomputer and validated the data model with the client's team
           before starting to build the actual APIs and parser. During the
           following months, the team delivered every 2 weeks a new release of
-          the parser and implemented the required features for the dashboard.
-          While building the parser and data model, we got aware of the
-          challenge and the complexity of the project regarding data structure
-          and validation. It required extensive testing by both teams and was a
+          the parser and implemented the required features for the dashboard. At
+          the same time, we were building the parser and data model, we got
+          aware of the challenge and the complexity regarding data structure and
+          validation. It required extensive testing by both teams and was a
           time-consuming process during a significant part of the project.
           Unfortunately, we didn't find a more productive and accessible way to
           simulate brain waves' good datasets within the 6-month deadline and
@@ -92,24 +92,23 @@ const CaseStudy = props => (
           designer that crafted the UI for the games.
         </p>
         <p>
-          I also led a team of 2 developers, while running the NFB project, that
-          delivered every 2 weeks new release of the games and backend
-          functionalities. One of the team members was a specialist in motion,
-          3D and game development, while my experience in that area was minimal,
-          the guidance was mostly towards code best practices, documentation and
-          deliverables' quality than in the technology per se. The developer
-          studied the several documents created by the research team and managed
-          the expectations regarding the functionalities of each game. The 7
-          cognitive games were all different from each other, with several
-          sublevels, and there was a requirement for high time precision for
-          each collected data point. Those data points were paramount for
-          validating the treatment and comparing it with other existing
-          strategies based on games. Consequently, the game development was the
-          biggest challenge of this project. For the dashboard, we reduced the
-          development time significantly by building a components library from
-          the NFB dashboard. This library was then used in the NG dashboard, and
-          only specific features for this project were accordingly implemented
-          on top.
+          I also led a team of 2 developers, during the time the NFB project was
+          running, that delivered every 2 weeks a new release of the games and
+          backend functionalities. One of the team members was a specialist in
+          motion, 3D and game development, while my experience in that area was
+          minimal, the guidance was mostly towards code best practices,
+          documentation and deliverables' quality than in the technology per se.
+          The developer studied the several documents created by the research
+          team and managed the expectations regarding the functionalities of
+          each game. The 7 cognitive games were all different from each other,
+          with several sublevels, and there was a requirement for high time
+          precision for each collected data point. Those data points were
+          paramount for validating the treatment and comparing it with other
+          existing strategies based on games. Consequently, the game development
+          was the biggest challenge of this project. For the dashboard, we
+          reduced the development time significantly by building a components
+          library from the NFB dashboard. This library was then used in the NG
+          dashboard, as we implemented only specific features on top.
         </p>
         <p>
           In the end, we were able to deliver the prototype: dashboard, backend
