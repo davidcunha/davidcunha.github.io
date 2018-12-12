@@ -233,7 +233,7 @@ const CaseStudy = props => (
         <br />
         <br />
         <p>
-          <ul className="actions fit">
+          <ul className="actions">
             <li>
               <Link to="/case-studies/mucho" className="button special">
                 View Next Case Study

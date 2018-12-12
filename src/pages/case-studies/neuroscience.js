@@ -5,6 +5,8 @@ import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
 
 import caseStudyImg from '../../assets/images/neuroscience-case-study.jpg'
+import caseStudyNFBArchitecture from '../../assets/images/neuroscience-case-study-nfb-architecture.svg'
+import caseStudyNGArchitecture from '../../assets/images/neuroscience-case-study-ng-architecture.svg'
 
 const CaseStudy = props => (
   <Layout>
@@ -215,9 +217,7 @@ const CaseStudy = props => (
             </a>
           </li>
         </ul>
-
         <p>NFB Backend Parser</p>
-
         <ul>
           <li>
             <a
@@ -238,9 +238,7 @@ const CaseStudy = props => (
             </a>
           </li>
         </ul>
-
         <p>NG HTML5 Games</p>
-
         <ul>
           <li>
             <a
@@ -261,10 +259,28 @@ const CaseStudy = props => (
             </a>
           </li>
         </ul>
+        <p>
+          <h4>Neurofeedback (NFB)</h4>
+        </p>
+        <p>
+          <img
+            src={caseStudyNFBArchitecture}
+            alt="Neuroscience NFB Architecture"
+          />
+        </p>
+        <p>
+          <h4>Neurogames (NG)</h4>
+        </p>
+        <p>
+          <img
+            src={caseStudyNGArchitecture}
+            alt="Neuroscience NG Architecture"
+          />
+        </p>
         <br />
         <br />
         <p>
-          <ul className="actions fit">
+          <ul className="actions">
             <li>
               <Link to="/case-studies/cocktail-shop" className="button special">
                 View Next Case Study
