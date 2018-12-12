@@ -49,7 +49,7 @@ const About = props => (
           <blockquote>
             “I've had the pleasure of growing our business alongside David for
             the past 4 years in Mucho, seeing him grow as a developer and into
-            his different endeavours. David is extremely diligent, clear and
+            his different endeavors. David is extremely diligent, clear and
             productive. He is naturally curious and seeks new challenges,
             working at his best when he sees genuine issues that new
             technologies can solve. As a developer, he also has a clear

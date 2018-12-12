@@ -38,7 +38,7 @@ const CaseStudy = props => (
           disorders.
         </p>
         <p>
-          <h4>Neurofeeback (NFB)</h4>
+          <h4>Neurofeedback (NFB)</h4>
         </p>
         <p>
           The treatment with Neurofeedback was slow, it required several 3rd
@@ -84,10 +84,10 @@ const CaseStudy = props => (
         </p>
         <p>
           On the other hand, the treatment with Neurogames was brand new. It was
-          state of the art applied methodology with 7 games already designed,
-          and an extensive list of metrics and formulas to gather results from
-          the treatment. The client didn't have any technical team besides the
-          researchers that established the methodology and metrics.
+          state of the art applied methodology with 7 cognitive games already
+          designed, and an extensive list of metrics and formulas to gather
+          results from the treatment. The client didn't have any technical team
+          besides the researchers that established the methodology and metrics.
         </p>
         <p>
           One of the team members was a specialist in motion, 3D and game
@@ -110,8 +110,7 @@ const CaseStudy = props => (
           In the end, we were able to deliver the prototype: dashboard, backend
           APIs, and 7 games, before the deadline. The prototype was then
           validated by real patients in the clinic, while bugs and small
-          adjustments were developed in order to match the client's
-          expectations.
+          adjustments were developed to match the client's expectations.
         </p>
         <br />
         <p>

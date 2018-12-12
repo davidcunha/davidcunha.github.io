@@ -210,7 +210,7 @@ const CaseStudy = props => (
           My contribution was mainly in the authentication system, my account,
           orders, addresses, and favorites drinks management, basket and
           checkout system integrated with Stripe. All the delivered features
-          were fully tested, and the Backend REST APIs were mocked to not
+          were fully tested, and the Backend REST APIs were mocked not to
           trigger unnecessary HTTP requests during testing procedures. Each
           deploy initiated the pipeline, in a Continous Integration server, for
           build verification and errors detection before the weekly release.

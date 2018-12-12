@@ -63,7 +63,8 @@ const CaseStudies = props => (
                 process of assessing patient’s brainwave activity EEG
                 (electroencephalogram) biofeedback. On the other hand,
                 Neurogames was state of the art applied methodology that used
-                HTML5 games to assess and improve patient’s brain functions.
+                HTML5 cognitive games to assess and improve patient’s brain
+                functions.
               </p>
               <ul className="actions">
                 <li>
