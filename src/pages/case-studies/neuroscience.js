@@ -118,7 +118,7 @@ const CaseStudy = props => (
         </p>
         <br />
         <p>
-          Our methodology included bi-weekly Sprints, User Acceptance Testing
+          Our methodology included fortnightly Sprints, User Acceptance Testing
           for each feature/fix, Pair Programming, Code Review, Continuous
           Integration, and Continuous Delivery.
         </p>
@@ -220,11 +220,11 @@ const CaseStudy = props => (
         <ul>
           <li>
             <a
-              href="https://nodejs.org/"
+              href="https://nearley.js.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Node
+              Nearly.js
             </a>
           </li>
           <li>
