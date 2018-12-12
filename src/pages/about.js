@@ -20,7 +20,7 @@ const About = props => (
         <p>
           I’m a professional Software Engineer and Scrum Master with more than 6
           years of experience based in sunny Portugal. Interested in building
-          scalable web apps that make people happy.
+          scalable web apps and businesses that make people happy.
         </p>
         <p>I love to:</p>
         <p>

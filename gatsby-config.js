@@ -3,7 +3,7 @@ module.exports = {
     title: 'davidcunha.xyz',
     author: 'David Cunha',
     description:
-      'Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy.',
+      'Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

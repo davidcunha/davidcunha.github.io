@@ -18,7 +18,7 @@ class HomeIndex extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />
           <meta
             name="description"
-            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy."
+            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
           />
           <meta itemProp="image" content={about} />
           <meta property="og:image" content={about} />
@@ -31,14 +31,14 @@ class HomeIndex extends React.Component {
           <meta property="og:title" content="davidcunha.xyz" />
           <meta
             property="og:description"
-            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy."
+            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
           />
           <meta name="twitter:image" content={about} />
           <meta property="twitter:image:width" content="260" />
           <meta property="twitter:image:height" content="260" />
           <meta
             property="twitter:description"
-            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy."
+            content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
           />
           <meta name="robots" content="index,follow" />>
           <meta
