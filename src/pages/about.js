@@ -9,6 +9,7 @@ import about from '../assets/images/about.jpg'
 const About = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>About</title>
       <meta name="description" content="About" />
     </Helmet>

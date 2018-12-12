@@ -11,7 +11,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `davidcunha.xyz`,
-        short_name: `davidcunha.xyz`,
+        short_name: `davidcunha`,
         start_url: '/',
         background_color: '#FCFCFC',
         theme_color: '#FCFCFC',

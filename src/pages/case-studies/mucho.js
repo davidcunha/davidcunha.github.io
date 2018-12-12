@@ -9,6 +9,7 @@ import caseStudyArchitecture from '../../assets/images/mucho-case-study-architec
 const CaseStudy = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>Mucho</title>
       <meta name="description" content="Mucho" />
     </Helmet>

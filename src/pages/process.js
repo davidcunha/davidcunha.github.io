@@ -9,6 +9,7 @@ import process from '../assets/images/process.jpg'
 const Process = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>Process</title>
       <meta name="description" content="Process" />
     </Helmet>

@@ -8,6 +8,7 @@ import caseStudyImg from '../../assets/images/neuroscience-case-study.jpg'
 const CaseStudy = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>Neuroscience</title>
       <meta name="description" content="Neuroscience" />
     </Helmet>

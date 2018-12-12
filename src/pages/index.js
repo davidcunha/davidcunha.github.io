@@ -42,10 +42,7 @@ class HomeIndex extends React.Component {
             content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
           />
           <meta name="robots" content="index,follow" />>
-          <meta
-            name="viewport"
-            content="width=device-width,minimum-scale=1,maximum-scale=1"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="HandheldFriendly" content="True" />
           <meta name="MobileOptimized" content="320" />
           <meta name="apple-mobile-web-app-title" content="davidcunha.xyz" />

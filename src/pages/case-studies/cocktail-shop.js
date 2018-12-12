@@ -9,6 +9,7 @@ import caseStudyArchitecture from '../../assets/images/cocktail-shop-case-study-
 const CaseStudy = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>Cocktail Shop</title>
       <meta name="description" content="Cocktail Shop" />
     </Helmet>

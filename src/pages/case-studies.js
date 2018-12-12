@@ -12,6 +12,7 @@ import caseStudy3 from '../assets/images/cocktail-shop-case-study.jpg'
 const CaseStudies = props => (
   <Layout>
     <Helmet>
+      <html lang="en" />
       <title>Case Studies</title>
       <meta name="description" content="Case Studies" />
     </Helmet>
