@@ -20,6 +20,8 @@ class HomeIndex extends React.Component {
             name="description"
             content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy."
           />
+          <meta itemProp="image" content={about} />
+          <meta property="og:image" content={about} />
           <meta property="og:image:alt" content="davidcunha.xyz" />
           <meta property="og:image:width" content="260" />
           <meta property="og:image:height" content="260" />
@@ -31,6 +33,7 @@ class HomeIndex extends React.Component {
             property="og:description"
             content="Hello, I’m David. I’m a professional Software Engineer with more than 6 years of experience. Interested in building scalable web apps that make people happy."
           />
+          <meta name="twitter:image" content={about} />
           <meta property="twitter:image:width" content="260" />
           <meta property="twitter:image:height" content="260" />
           <meta
