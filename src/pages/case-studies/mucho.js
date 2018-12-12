@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
@@ -230,6 +231,17 @@ const CaseStudy = props => (
         </p>
         <p>
           <img src={caseStudyArchitecture} alt="Mucho Architecture" />
+        </p>
+        <br />
+        <br />
+        <p>
+          <ul className="actions fit">
+            <li>
+              <Link to="/case-studies/neuroscience" className="button special">
+                View Next Case Study
+              </Link>
+            </li>
+          </ul>
         </p>
       </div>
     </div>
