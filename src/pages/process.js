@@ -211,10 +211,10 @@ const Process = props => (
         </ul>
         <p>
           Node.js enables building fast, real-time, scalable network
-          applications, as it’s capable of handling a huge number of{' '}
+          applications, as it’s capable of handling a vast number of{' '}
           <strong>
-            simultaneous connections with high throughput, which equates to high
-            scalability
+            simultaneous connections with high throughput, consequently
+            providing high scalability
           </strong>
           . On the frontend side, React provides a client-side experience on a
           single-page application with small,{' '}
