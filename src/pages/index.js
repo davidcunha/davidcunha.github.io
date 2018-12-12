@@ -13,6 +13,7 @@ class HomeIndex extends React.Component {
     return (
       <Layout>
         <Helmet>
+          <html lang="en" />
           <title>davidcunha.xyz</title>
           <meta charSet="utf-8" />
           <meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />

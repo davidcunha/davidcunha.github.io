@@ -30,8 +30,15 @@ const CaseStudies = props => (
                 <h3>Mucho</h3>
               </header>
               <p>
-                Mucho provides a personalized experience for grocery shopping
-                with inspirational recipes contributed by a trusted community of
+                <a
+                  href="http://getmucho.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Mucho
+                </a>{' '}
+                provides a personalized experience for grocery shopping with
+                inspirational recipes contributed by a trusted community of
                 foodies. With a few clicks, ingredients for recipes and
                 breakfast &amp; snacks are ordered, and a selected supermarket
                 will delivery the order to the customer’s doorstep.
