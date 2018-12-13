@@ -208,20 +208,6 @@ const CaseStudy = props => (
         <br />
         <h4>Neurofeedback (NFB)</h4>
         <p>
-          The architecture of the NFB project consists of numerous REST APIs serving the dashboard
-          and the microcomputer connected to a headset. We developed the backend with Node.js and
-          MySQL. However, there were specific requirements regarding data parsing, validation,
-          persistance, and performance, that were the biggest challenges of this project. The
-          microcomputer, developed by the client&apos;s NFB team, collected and processed the brain
-          wave information before sending it to the backend. In a first version of the
-          microcomputer, it sent data files with specific structures for the backend to parse,
-          validate, and persist.
-        </p>
-        <p>
-          The backend infrastructure was set up in a Private Cloud, as required by the client, who
-          had internal servers available in a private network.
-        </p>
-        <p>
           <img src={caseStudyNFBArchitecture} alt="Neuroscience NFB Architecture" />
         </p>
         <br />
