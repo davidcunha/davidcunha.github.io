@@ -73,8 +73,8 @@ class HomeIndex extends React.Component {
           <div className="content">
             <p>
               I’m a professional Software Engineer and Scrum Master
-              <br />
-              with more than 6 years of experience based in sunny Portugal.
+              <br /> with more than 6 years of experience based in sunny
+              Portugal.
             </p>
             <ul className="actions">
               <li>
