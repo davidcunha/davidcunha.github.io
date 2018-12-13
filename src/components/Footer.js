@@ -45,7 +45,7 @@ const Footer = props => (
           </a>
         </li>
       </ul>
-      <ul class="copyright">
+      <ul className="copyright">
         <li>David Cunha - {new Date().getFullYear()}</li>
         <li>
           Built with{' '}

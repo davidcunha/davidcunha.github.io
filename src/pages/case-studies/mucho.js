@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
 
-import caseStudyImg from '../../assets/images/mucho-case-study.jpg'
 import caseStudyArchitecture from '../../assets/images/mucho-case-study-architecture.svg'
 
 const CaseStudy = props => (
@@ -15,7 +14,11 @@ const CaseStudy = props => (
       <meta name="description" content="Mucho" />
     </Helmet>
 
-    <Banner title="Mucho" bgImg={caseStudyImg} bgColor="#7c7c80" />
+    <Banner
+      title="Mucho"
+      bgImg={props.data.caseStudyImg.childImageSharp.fluid}
+      bgColor="#7c7c80"
+    />
 
     <div id="main" className="case-study">
       <div className="inner">
@@ -245,5 +248,17 @@ const CaseStudy = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    caseStudyImg: file(relativePath: { eq: "mucho-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default CaseStudy

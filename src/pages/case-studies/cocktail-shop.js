@@ -1,10 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
 
-import caseStudyImg from '../../assets/images/cocktail-shop-case-study.jpg'
 import caseStudyArchitecture from '../../assets/images/cocktail-shop-case-study-architecture.svg'
 
 const CaseStudy = props => (
@@ -15,7 +14,11 @@ const CaseStudy = props => (
       <meta name="description" content="Cocktail Shop" />
     </Helmet>
 
-    <Banner title="Cocktail Shop" bgImg={caseStudyImg} bgColor="#7c7c80" />
+    <Banner
+      title="Cocktail Shop"
+      bgImg={props.data.caseStudyImg.childImageSharp.fluid}
+      bgColor="#7c7c80"
+    />
 
     <div id="main" className="case-study">
       <div className="inner">
@@ -243,5 +246,17 @@ const CaseStudy = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    caseStudyImg: file(relativePath: { eq: "cocktail-shop-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default CaseStudy

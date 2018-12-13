@@ -1,13 +1,9 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-
-import caseStudies from '../assets/images/case-studies.jpg'
-import caseStudy1 from '../assets/images/mucho-case-study.jpg'
-import caseStudy2 from '../assets/images/neuroscience-case-study.jpg'
-import caseStudy3 from '../assets/images/cocktail-shop-case-study.jpg'
 
 const CaseStudies = props => (
   <Layout>
@@ -17,13 +13,16 @@ const CaseStudies = props => (
       <meta name="description" content="Case Studies" />
     </Helmet>
 
-    <Banner title="Case Studies" bgImg={caseStudies} />
+    <Banner
+      title="Case Studies"
+      bgImg={props.data.caseStudies.childImageSharp.fluid}
+    />
 
     <div id="main">
       <section id="one" className="spotlights">
         <section className="case-study">
           <Link to="/case-studies/mucho" className="image">
-            <div style={{ backgroundImage: `url(${caseStudy1})` }} />
+            <Img fluid={props.data.caseStudy1.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -56,7 +55,7 @@ const CaseStudies = props => (
         </section>
         <section className="case-study">
           <Link to="/case-studies/neuroscience" className="image">
-            <div style={{ backgroundImage: `url(${caseStudy2})` }} />
+            <Img fluid={props.data.caseStudy2.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -89,7 +88,7 @@ const CaseStudies = props => (
         </section>
         <section className="case-study">
           <Link to="/case-studies/cocktail-shop" className="image">
-            <div style={{ backgroundImage: `url(${caseStudy3})` }} />
+            <Img fluid={props.data.caseStudy3.childImageSharp.fluid} />
           </Link>
           <div className="content">
             <div className="inner">
@@ -121,5 +120,38 @@ const CaseStudies = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    caseStudies: file(relativePath: { eq: "case-studies.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy1: file(relativePath: { eq: "mucho-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy2: file(relativePath: { eq: "neuroscience-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy3: file(relativePath: { eq: "cocktail-shop-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default CaseStudies

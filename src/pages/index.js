@@ -1,13 +1,11 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
 
 import about from '../assets/images/about.jpg'
-import process from '../assets/images/process.jpg'
-import caseStudies from '../assets/images/case-studies.jpg'
-
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -68,7 +66,10 @@ class HomeIndex extends React.Component {
           </script>
         </Helmet>
 
-        <Banner title="Hi, my name is David" bgImg={about}>
+        <Banner
+          title="Hi, my name is David"
+          bgImg={this.props.data.about.childImageSharp.fluid}
+        >
           <div className="content">
             <p>
               I’m a professional Software Engineer and Scrum Master
@@ -87,13 +88,15 @@ class HomeIndex extends React.Component {
 
         <div id="main">
           <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${process})` }}>
+            <article>
+              <Img fluid={this.props.data.process.childImageSharp.fluid} />
               <header className="major">
                 <h3>Process</h3>
               </header>
               <Link to="/process" className="link primary" />
             </article>
-            <article style={{ backgroundImage: `url(${caseStudies})` }}>
+            <article>
+              <Img fluid={this.props.data.caseStudies.childImageSharp.fluid} />
               <header className="major">
                 <h3>Case Studies</h3>
               </header>
@@ -105,5 +108,31 @@ class HomeIndex extends React.Component {
     )
   }
 }
+
+export const query = graphql`
+  query {
+    about: file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    process: file(relativePath: { eq: "process.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudies: file(relativePath: { eq: "case-studies.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default HomeIndex

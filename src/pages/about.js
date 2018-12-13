@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-
-import about from '../assets/images/about.jpg'
 
 const About = props => (
   <Layout>
@@ -14,7 +12,7 @@ const About = props => (
       <meta name="description" content="About" />
     </Helmet>
 
-    <Banner title="About" bgImg={about} />
+    <Banner title="About" bgImg={props.data.about.childImageSharp.fluid} />
 
     <div id="main">
       <div className="inner">
@@ -46,7 +44,7 @@ const About = props => (
         <header className="major">
           <h3>Testimonials</h3>
         </header>
-        <p className="quote">
+        <div className="quote">
           <blockquote>
             “I've had the pleasure of growing our business alongside David for
             the past 4 years in Mucho, seeing him grow as a developer and into
@@ -61,8 +59,10 @@ const About = props => (
           <div className="author">
             <strong>Juliana Zarate - CEO and Co-Founder @ Mucho</strong>
           </div>
-        </p>
-        <p className="quote">
+        </div>
+        <br />
+        <br />
+        <div className="quote">
           <blockquote>
             “Working with David, it’s just a pleasure! I can easily say that he
             is the person that I most respect professionally - hardworking,
@@ -75,8 +75,10 @@ const About = props => (
           <div className="author">
             <strong>Ricardo Parente - CEO @ PICUS.</strong>
           </div>
-        </p>
-        <p className="quote">
+        </div>
+        <br />
+        <br />
+        <div className="quote">
           <blockquote>
             “I have been working, for some time now, with David in some side
             projects and own ideas of ours. I have to say it’s an absolute joy
@@ -89,17 +91,16 @@ const About = props => (
           <div className="author">
             <strong>Rui Peres - Engineering Manager @ Babylon Health</strong>
           </div>
-        </p>
+        </div>
         <br />
-        <p>
-          <ul className="actions">
-            <li>
-              <Link to="/case-studies" className="button special">
-                View Case Studies
-              </Link>
-            </li>
-          </ul>
-        </p>
+        <br />
+        <ul className="actions">
+          <li>
+            <Link to="/case-studies" className="button special">
+              View Case Studies
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="inner">
         <header className="major">
@@ -469,5 +470,17 @@ const About = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    about: file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default About

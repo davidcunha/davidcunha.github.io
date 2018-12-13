@@ -4,7 +4,6 @@ import Helmet from 'react-helmet'
 import Layout from '../../components/layout'
 import Banner from '../../components/Banner'
 
-import caseStudyImg from '../../assets/images/neuroscience-case-study.jpg'
 import caseStudyNFBArchitecture from '../../assets/images/neuroscience-case-study-nfb-architecture.svg'
 import caseStudyNGArchitecture from '../../assets/images/neuroscience-case-study-ng-architecture.svg'
 
@@ -16,7 +15,11 @@ const CaseStudy = props => (
       <meta name="description" content="Neuroscience" />
     </Helmet>
 
-    <Banner title="Neuroscience" bgImg={caseStudyImg} bgColor="#7c7c80" />
+    <Banner
+      title="Neuroscience"
+      bgImg={props.data.caseStudyImg.childImageSharp.fluid}
+      bgColor="#7c7c80"
+    />
 
     <div id="main" className="case-study">
       <div className="inner">
@@ -35,11 +38,11 @@ const CaseStudy = props => (
         </header>
         <p>
           The client had a Neuropsychology clinic with several highly skilled
-          professionals from this field: Ph.D.'s, researchers and doctors. With
-          hundreds of patients every week, the team was studying new processes
-          and innovative approaches for reducing effort and time spent to
-          understand the behavioral and cognitive effects of neurological
-          disorders.
+          professionals from this field: Ph.D.'s, developers, researchers and
+          doctors. With hundreds of patients every week, the team was studying
+          new processes and innovative approaches for reducing effort and time
+          spent to understand the behavioral and cognitive effects of
+          neurological disorders.
         </p>
         <p>
           <h4>Neurofeedback (NFB)</h4>
@@ -56,22 +59,22 @@ const CaseStudy = props => (
         </p>
         <p>
           I led a small team of 2 developers that was in charge of building the
-          backend, data model, parser of data sources, and an interactive
-          dashboard for technicians. Firstly we joined the client's NFB team for
-          understanding the existing process and which features and information
-          were crucial for the technician's dashboard. While the Design team was
-          sketching the UI/UX, we inspected the data collected by the
-          microcomputer and validated the data model with the client's team
-          before starting to build the actual APIs and parser. During the
-          following months, the team delivered every 2 weeks a new release of
-          the parser and implemented the required features for the dashboard. At
-          the same time, we were building the parser and data model, we got
-          aware of the challenge and the complexity regarding data structure and
-          validation. It required extensive testing by both teams and was a
-          time-consuming process during a significant part of the project.
-          Unfortunately, we didn't find a more productive and accessible way to
-          simulate brain waves' good datasets within the 6-month deadline and
-          resources both teams had available.
+          backend, data model, parser of the data collected by the
+          microcomputer, and an interactive dashboard for technicians. Firstly
+          we joined the client's NFB team for understanding the existing process
+          and which features and information were crucial for the technician's
+          dashboard. While the Design team was sketching the UI/UX, we inspected
+          the data collected by the microcomputer and validated the data model
+          with the client's team before starting to build the actual APIs and
+          parser. During the following months, the team delivered every 2 weeks
+          a new release of the parser and implemented the required features for
+          the dashboard. At the same time, we were building the parser and data
+          model, we got aware of the challenge and the complexity regarding data
+          structure and validation. It required extensive testing by both teams
+          and was a time-consuming process during a significant part of the
+          project. Unfortunately, we didn't find a more productive and
+          accessible way to simulate brain waves' good datasets within the
+          6-month deadline and resources both teams had available.
         </p>
         <p>
           In the end, we were able to deliver the prototype: dashboard, backend
@@ -290,5 +293,17 @@ const CaseStudy = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    caseStudyImg: file(relativePath: { eq: "neuroscience-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default CaseStudy
