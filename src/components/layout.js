@@ -1,40 +1,44 @@
-import React from 'react'
-
-import '../assets/scss/main.scss'
-import Header from './Header'
-import Menu from './Menu'
-import Footer from './Footer'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Header from './Header';
+import Menu from './Menu';
+import Footer from './Footer';
+import '../assets/scss/main.scss';
 
 class Layout extends React.Component {
   constructor(props) {
-    super(props)
+    super(props);
     this.state = {
       isMenuVisible: false,
       loading: 'is-loading',
-    }
-    this.handleToggleMenu = this.handleToggleMenu.bind(this)
+    };
+    this.handleToggleMenu = this.handleToggleMenu.bind(this);
+  }
+
+  static propTypes = {
+    children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
   }
 
   componentDidMount() {
     this.timeoutId = setTimeout(() => {
-      this.setState({ loading: '' })
-    }, 100)
+      this.setState({ loading: '' });
+    }, 100);
   }
 
   componentWillUnmount() {
     if (this.timeoutId) {
-      clearTimeout(this.timeoutId)
+      clearTimeout(this.timeoutId);
     }
   }
 
   handleToggleMenu() {
     this.setState({
       isMenuVisible: !this.state.isMenuVisible,
-    })
+    });
   }
 
   render() {
-    const { children } = this.props
+    const { children } = this.props;
 
     return (
       <div
@@ -49,8 +53,8 @@ class Layout extends React.Component {
         </div>
         <Menu onToggleMenu={this.handleToggleMenu} />
       </div>
-    )
+    );
   }
 }
 
-export default Layout
+export default Layout;

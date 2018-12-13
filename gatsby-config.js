@@ -1,4 +1,4 @@
-const path = require('path')
+const path = require('path');
 
 module.exports = {
   siteMetadata: {
@@ -10,17 +10,17 @@ module.exports = {
   plugins: [
     'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `images`,
-        path: path.join(__dirname, `src`, `assets`, `images`),
+        name: 'images',
+        path: path.join(__dirname, 'src', 'assets', 'images'),
       },
     },
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
-        name: `davidcunha.xyz`,
-        short_name: `davidcunha`,
+        name: 'davidcunha.xyz',
+        short_name: 'davidcunha',
         start_url: '/',
         background_color: '#FCFCFC',
         theme_color: '#FCFCFC',
@@ -33,4 +33,4 @@ module.exports = {
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
   ],
-}
+};

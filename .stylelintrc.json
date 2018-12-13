@@ -1,0 +1,39 @@
+{
+  "extends": ["stylelint-config-recommended"],
+  "plugins": ["stylelint-scss", "stylelint-no-unsupported-browser-features"],
+  "rules": {
+    "plugin/no-unsupported-browser-features": [
+      true,
+      {
+        "browsers": [
+          "> 3%",
+          "Chrome >= 66",
+          "Firefox >= 59",
+          "Edge >= 15",
+          "Safari >= 11",
+          "iOS >= 10.3"
+        ],
+        "severity": "warning"
+      }
+    ],
+    "at-rule-no-unknown": [
+      true,
+      {
+        "ignoreAtRules": [
+          "function",
+          "for",
+          "if",
+          "else",
+          "elseif",
+          "each",
+          "include",
+          "mixin",
+          "return",
+          "content",
+          "extend",
+          "warn"
+        ]
+      }
+    ]
+  }
+}

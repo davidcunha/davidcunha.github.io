@@ -1,11 +1,13 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import Banner from '../components/Banner'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import Banner from '../components/Banner';
 
-import about from '../assets/images/about.jpg'
+import about from '../assets/images/about.jpg';
+
 class HomeIndex extends React.Component {
   render() {
     return (
@@ -39,23 +41,17 @@ class HomeIndex extends React.Component {
             property="twitter:description"
             content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
           />
-          <meta name="robots" content="index,follow" />>
+          <meta name="robots" content="index,follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta name="HandheldFriendly" content="True" />
           <meta name="MobileOptimized" content="320" />
           <meta name="apple-mobile-web-app-title" content="davidcunha.xyz" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta name="apple-touch-fullscreen" content="yes" />
-          <meta
-            name="apple-mobile-web-app-status-bar-style"
-            content="black-translucent"
-          />
+          <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
           <meta name="application-name" content="davidcunha.xyz" />
           <meta name="msapplication-TileColor" content="#FCFCFC" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=UA-127658443-1"
-          />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127658443-1" />
           <script>
             {`
             window.dataLayer = window.dataLayer || [];
@@ -66,15 +62,11 @@ class HomeIndex extends React.Component {
           </script>
         </Helmet>
 
-        <Banner
-          title="Hi, my name is David"
-          bgImg={this.props.data.about.childImageSharp.fluid}
-        >
+        <Banner title="Hi, my name is David" bgImg={this.props.data.about.childImageSharp.fluid}>
           <div className="content">
             <p>
               I’m a professional Software Engineer and Scrum Master
-              <br /> with more than 6 years of experience based in sunny
-              Portugal.
+              <br /> with more than 6 years of experience based in sunny Portugal.
             </p>
             <ul className="actions">
               <li>
@@ -105,9 +97,13 @@ class HomeIndex extends React.Component {
           </section>
         </div>
       </Layout>
-    )
+    );
   }
 }
+
+HomeIndex.propTypes = {
+  data: PropTypes.object,
+};
 
 export const query = graphql`
   query {
@@ -133,6 +129,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default HomeIndex
+export default HomeIndex;

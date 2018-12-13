@@ -1,9 +1,10 @@
-import React from 'react'
-import { Link, graphql } from 'gatsby'
-import Img from 'gatsby-image'
-import Helmet from 'react-helmet'
-import Layout from '../components/layout'
-import Banner from '../components/Banner'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link, graphql } from 'gatsby';
+import Img from 'gatsby-image';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import Banner from '../components/Banner';
 
 const CaseStudies = props => (
   <Layout>
@@ -13,10 +14,7 @@ const CaseStudies = props => (
       <meta name="description" content="Case Studies" />
     </Helmet>
 
-    <Banner
-      title="Case Studies"
-      bgImg={props.data.caseStudies.childImageSharp.fluid}
-    />
+    <Banner title="Case Studies" bgImg={props.data.caseStudies.childImageSharp.fluid} />
 
     <div id="main">
       <section id="one" className="spotlights">
@@ -30,18 +28,13 @@ const CaseStudies = props => (
                 <h3>Mucho</h3>
               </header>
               <p>
-                <a
-                  href="http://getmucho.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="http://getmucho.com" target="_blank" rel="noopener noreferrer">
                   Mucho
                 </a>{' '}
-                provides a personalized experience for grocery shopping with
-                inspirational recipes contributed by a trusted community of
-                foodies. With a few clicks, ingredients for recipes and
-                breakfast &amp; snacks are ordered, and a selected supermarket
-                will delivery the order to the customer’s doorstep.
+                provides a personalized experience for grocery shopping with inspirational recipes
+                contributed by a trusted community of foodies. With a few clicks, ingredients for
+                recipes and breakfast &amp; snacks are ordered, and a selected supermarket will
+                delivery the order to the customer’s doorstep.
               </p>
               <ul className="actions">
                 <li>
@@ -63,22 +56,16 @@ const CaseStudies = props => (
                 <h3>Neuroscience</h3>
               </header>
               <p>
-                Neuroscience (client’s name and website disclosed) were two R&D
-                projects that solved distinctive problems through digital
-                therapeutic solutions: Neurofeedback and Neurogames.
-                Neurofeedback had as primary objective to innovate the standard
-                process of assessing patient’s brainwave activity EEG
-                (electroencephalogram) biofeedback. On the other hand,
-                Neurogames was state of the art applied methodology that used
-                HTML5 cognitive games to assess and improve patient’s brain
-                functions.
+                Neuroscience (client’s name and website disclosed) were two R&D projects that solved
+                distinctive problems through digital therapeutic solutions: Neurofeedback and
+                Neurogames. Neurofeedback had as primary objective to innovate the standard process
+                of assessing patient’s brainwave activity EEG (electroencephalogram) biofeedback. On
+                the other hand, Neurogames was state of the art applied methodology that used HTML5
+                cognitive games to assess and improve patient’s brain functions.
               </p>
               <ul className="actions">
                 <li>
-                  <Link
-                    to="/case-studies/neuroscience"
-                    className="button special"
-                  >
+                  <Link to="/case-studies/neuroscience" className="button special">
                     View Case Study
                   </Link>
                 </li>
@@ -96,19 +83,15 @@ const CaseStudies = props => (
                 <h3>Cocktail Shop</h3>
               </header>
               <p>
-                Cocktail Shop (client’s name and website disclosed) provides a
-                unique online shopping experience to create and deliver
-                customized cocktails. From flavors to spirits, liqueurs, wine,
-                or garnish, customers can build a cocktail step by step or
-                select a bartender recommendation to be quickly delivered to
-                their doorstep for a wonderful party.
+                Cocktail Shop (client’s name and website disclosed) provides a unique online
+                shopping experience to create and deliver customized cocktails. From flavors to
+                spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or
+                select a bartender recommendation to be quickly delivered to their doorstep for a
+                wonderful party.
               </p>
               <ul className="actions">
                 <li>
-                  <Link
-                    to="/case-studies/cocktail-shop"
-                    className="button special"
-                  >
+                  <Link to="/case-studies/cocktail-shop" className="button special">
                     View Case Study
                   </Link>
                 </li>
@@ -119,7 +102,11 @@ const CaseStudies = props => (
       </section>
     </div>
   </Layout>
-)
+);
+
+CaseStudies.propTypes = {
+  data: PropTypes.object,
+};
 
 export const query = graphql`
   query {
@@ -152,6 +139,6 @@ export const query = graphql`
       }
     }
   }
-`
+`;
 
-export default CaseStudies
+export default CaseStudies;

@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 
-const Footer = props => (
+const Footer = () => (
   <footer id="footer">
     <div className="inner">
       <ul className="icons">
@@ -49,17 +49,13 @@ const Footer = props => (
         <li>David Cunha - {new Date().getFullYear()}</li>
         <li>
           Built with{' '}
-          <a
-            href="https://gatsbyjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://gatsbyjs.org" target="_blank" rel="noopener noreferrer">
             Gatsby
           </a>
         </li>
       </ul>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;

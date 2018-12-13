@@ -1,25 +1,25 @@
 /* Icon */
 
-	.icon {
-		@include icon;
-		border-bottom: none;
-		position: relative;
-		font-size: 20pt;
+.icon {
+  @include icon;
+  border-bottom: none;
+  position: relative;
+  font-size: 20pt;
 
-		> .label {
-			display: none;
-		}
+  > .label {
+    display: none;
+  }
 
-		&.alt {
-			&:before {
-				background-color: _palette(fg);
-				border-radius: 100%;
-				color: _palette(bg);
-				display: inline-block;
-				height: 2em;
-				line-height: 2em;
-				text-align: center;
-				width: 1em;
-			}
-		}
-	}
+  &.alt {
+    &:before {
+      background-color: _palette(fg);
+      border-radius: 100%;
+      color: _palette(bg);
+      display: inline-block;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      width: 1em;
+    }
+  }
+}
