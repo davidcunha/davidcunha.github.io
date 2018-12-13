@@ -1,10 +1,8 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import { Link, graphql } from 'gatsby'
 import Helmet from 'react-helmet'
 import Layout from '../components/layout'
 import Banner from '../components/Banner'
-
-import process from '../assets/images/process.jpg'
 
 const Process = props => (
   <Layout>
@@ -14,7 +12,7 @@ const Process = props => (
       <meta name="description" content="Process" />
     </Helmet>
 
-    <Banner title="Process" bgImg={process} />
+    <Banner title="Process" bgImg={props.data.process.childImageSharp.fluid} />
 
     <div id="main">
       <div className="inner">
@@ -424,5 +422,17 @@ const Process = props => (
     </div>
   </Layout>
 )
+
+export const query = graphql`
+  query {
+    process: file(relativePath: { eq: "process.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+  }
+`
 
 export default Process
