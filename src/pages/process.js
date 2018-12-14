@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import Contact from '../components/Contact';
 
 const Process = props => (
   <Layout>
@@ -294,6 +295,8 @@ const Process = props => (
             🤙
           </span>
         </p>
+        <br />
+        <Contact />
       </div>
     </div>
   </Layout>

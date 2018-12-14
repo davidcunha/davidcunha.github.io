@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../../components/layout';
 import Banner from '../../components/Banner';
+import Contact from '../../components/Contact';
 
 import caseStudyNFBArchitecture from '../../assets/images/neuroscience-case-study-nfb-architecture.svg';
 import caseStudyNGArchitecture from '../../assets/images/neuroscience-case-study-ng-architecture.svg';
@@ -32,6 +33,8 @@ const CaseStudy = props => (
           <li>Backend and API development</li>
           <li>Technical Lead</li>
         </ul>
+        <br />
+        <Contact />
       </div>
       <div className="inner">
         <header className="major">

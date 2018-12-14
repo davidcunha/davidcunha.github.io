@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import Contact from '../components/Contact';
 
 const About = props => (
   <Layout>
@@ -40,6 +41,8 @@ const About = props => (
           Travel and experience new things
           <br />
         </p>
+        <br />
+        <Contact />
       </div>
       <div className="inner">
         <header className="major">
@@ -375,15 +378,13 @@ const About = props => (
         </p>
         <p>
           Ah! And every weekday, I’m available for a direct or remote 30-minute free session between
-          18:00-20:00 (GMT). Just contact me via{' '}
-          <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">
-            Email
-          </a>{' '}
-          to schedule it{' '}
+          18:00-20:00 (GMT). Just contact me via Email to schedule it{' '}
           <span role="img" aria-label="emoji">
             🤙
           </span>
         </p>
+        <br />
+        <Contact />
       </div>
     </div>
   </Layout>

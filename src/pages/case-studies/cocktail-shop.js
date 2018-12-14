@@ -4,6 +4,7 @@ import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../../components/layout';
 import Banner from '../../components/Banner';
+import Contact from '../../components/Contact';
 
 import caseStudyArchitecture from '../../assets/images/cocktail-shop-case-study-architecture.svg';
 
@@ -30,6 +31,8 @@ const CaseStudy = props => (
           <li>Frontend development</li>
           <li>Technical Lead</li>
         </ul>
+        <br />
+        <Contact />
       </div>
       <div className="inner">
         <header className="major">
