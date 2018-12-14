@@ -133,6 +133,11 @@ const CaseStudy = props => (
             </a>
           </li>
           <li>
+            <a href="https://d3js.org/" target="_blank" rel="noopener noreferrer">
+              D3.js
+            </a>
+          </li>
+          <li>
             <a
               href="https://www.ics.uci.edu/~fielding/pubs/dissertation/fielding_dissertation.pdf"
               target="_blank"
