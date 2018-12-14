@@ -1,7 +1,6 @@
 /* Icon */
 
 .icon {
-  @include icon;
   border-bottom: none;
   position: relative;
   font-size: 20pt;
@@ -20,6 +19,14 @@
       line-height: 2em;
       text-align: center;
       width: 1em;
+    }
+  }
+
+  svg {
+    width: 22px;
+    height: 22px;
+    path {
+      fill: _palette(bg);
     }
   }
 }
