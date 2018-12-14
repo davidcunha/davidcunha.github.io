@@ -73,6 +73,32 @@ const CaseStudies = props => (
             </div>
           </div>
         </section>
+        <section className="case-study">
+          <Link to="/case-studies/cocktail-experience" className="image">
+            <Img fluid={props.data.caseStudy3.childImageSharp.fluid} />
+          </Link>
+          <div className="content">
+            <div className="inner">
+              <header className="major">
+                <h3>Cocktail Experience</h3>
+              </header>
+              <p>
+                Cocktail Experience (client’s name and website disclosed) provides a unique online
+                shopping experience to create and deliver customized cocktails. From flavors to
+                spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or
+                select a bartender recommendation to be quickly delivered to their doorstep for a
+                wonderful party.
+              </p>
+              <ul className="actions">
+                <li>
+                  <Link to="/case-studies/cocktail-experience" className="button special">
+                    View Case Study
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
       </section>
     </div>
   </Layout>
@@ -105,7 +131,7 @@ export const query = graphql`
         }
       }
     }
-    caseStudy3: file(relativePath: { eq: "cocktail-shop-case-study.jpg" }) {
+    caseStudy3: file(relativePath: { eq: "cocktail-experience-case-study.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 640) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
