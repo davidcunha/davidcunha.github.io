@@ -227,7 +227,7 @@ const CaseStudy = props => (
         <br />
         <ul className="actions">
           <li>
-            <Link to="/case-studies/cocktail-shop" className="button special">
+            <Link to="/case-studies/mucho" className="button special">
               View Next Case Study
             </Link>
           </li>
