@@ -6,18 +6,18 @@ import Layout from '../../components/layout';
 import Banner from '../../components/Banner';
 import Contact from '../../components/Contact';
 
-import caseStudyArchitecture from '../../assets/images/cocktail-shop-case-study-architecture.svg';
+import caseStudyArchitecture from '../../assets/images/cocktail-experience-case-study-architecture.svg';
 
 const CaseStudy = props => (
   <Layout>
     <Helmet>
       <html lang="en" />
-      <title>Cocktail Shop</title>
-      <meta name="description" content="Cocktail Shop" />
+      <title>Cocktail Experience</title>
+      <meta name="description" content="Cocktail Experience" />
     </Helmet>
 
     <Banner
-      title="Cocktail Shop"
+      title="Cocktail Experience"
       bgImg={props.data.caseStudyImg.childImageSharp.fluid}
       bgColor="#7c7c80"
     />
@@ -53,17 +53,17 @@ const CaseStudy = props => (
           We started by identifying the frontend features and interrogations regarding the APIs for
           the e-commerce experience. As we laid out the features in the Backlog and estimated the
           effort for planning the first Sprints, we also assessed the design guidelines, desktop,
-          and mobile UI design. For respecting the grid’s guideline, we had to build a custom grid
-          and study the User Interface (UI) architecture in search of reusable components. The
-          latter was an arduous process since the UI wasn’t defined with the premise of reusable and
+          and mobile UI design. In order to respect the grid’s guideline, we built a custom grid and
+          study the User Interface (UI) architecture in search of reusable components. The latter
+          was an arduous process since the UI wasn’t defined with the premise of reusable and
           self-contained elements which would save time in the frontend development. Hence, we had
           in many situations to approach the design and adapt accordingly, with respective
           validation, to save development time without dismissing the customer experience and design
           provided by the team.
         </p>
         <p>
-          In the end, we were able to successfully deliver the cocktail shop for a final review
-          before going live for the delight of the client’s customers.
+          In the end, we were able to successfully deliver the cocktail experience for a final
+          review before going live for the delight of the client’s customers.
         </p>
         <p>
           Our methodology included weekly Sprints, User Acceptance Testing for each feature/fix,
@@ -187,7 +187,7 @@ const CaseStudy = props => (
           for authentication between frontend and backend APIs.
         </p>
         <p>
-          <img src={caseStudyArchitecture} alt="Cocktail Shop Architecture" />
+          <img src={caseStudyArchitecture} alt="Cocktail Experience Architecture" />
         </p>
         <br />
         <br />
@@ -209,7 +209,7 @@ CaseStudy.propTypes = {
 
 export const query = graphql`
   query {
-    caseStudyImg: file(relativePath: { eq: "cocktail-shop-case-study.jpg" }) {
+    caseStudyImg: file(relativePath: { eq: "cocktail-experience-case-study.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid_withWebp_noBase64

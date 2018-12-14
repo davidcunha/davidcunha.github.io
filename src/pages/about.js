@@ -155,7 +155,7 @@ const About = props => (
         </p>
         <p>
           <strong>Ruby on Rails</strong> was used when we were building from scratch, but from time
-          to time I had to rescue projects and help Startups to meet their vision:{' '}
+          to time I rescued projects and helped Startups to meet their vision:{' '}
           <strong>Java, PHP, Laravel, Python, Backbone.js, Sass, React</strong>, well you name it.
           As Software Engineers be prepared to learn different programming languages and frameworks,
           but with the experience, you will notice that standard computer science concepts and
