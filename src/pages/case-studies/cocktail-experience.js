@@ -182,8 +182,7 @@ const CaseStudy = props => (
           Regarding frontend performance, we included critical-path (above-the-fold) CSS to reduce
           page-blocking content, assets caching, image optimization, CSS/JS minification via
           webpack, and GZIP compression. Security was also a primary concern for this application.
-          Hence, several HTTP headers and good practices were used, such as CSP, DNS prefetching
-          control, HTTP Strict Transport Security, XSS protections, environment variables, and JWT
+          Hence, several HTTP headers and good practices were used, environment variables, and JWT
           for authentication between frontend and backend APIs.
         </p>
         <p>
