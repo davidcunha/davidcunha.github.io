@@ -42,9 +42,9 @@ const CaseStudy = props => (
         </header>
         <p>
           The client had a Neuropsychology clinic with several highly skilled professionals from
-          this field: Ph.D.&apos;s, developers, researchers and doctors. With hundreds of patients
-          every week, the team was studying new processes and innovative approaches for reducing
-          effort and time spent to understand the behavioral and cognitive effects of neurological
+          this field: Ph.D.&apos;s, developers and researchers. With hundreds of patients every
+          week, their team was studying new processes and innovative approaches for reducing effort
+          and time spent to understand the behavioral and cognitive effects of neurological
           disorders.
         </p>
         <br />
@@ -101,11 +101,10 @@ const CaseStudy = props => (
           functionalities of each game. The 7 cognitive games were all different from each other,
           with several sublevels, and there was a requirement for high time precision for each
           collected data point. Those data points were paramount for validating the treatment and
-          comparing it with other existing strategies based on games. Consequently, the game
-          development was the biggest challenge of this project. For the dashboard, we reduced the
-          development time significantly by building a components library from the NFB dashboard.
-          This library was then used in the NG dashboard, as we implemented only specific features
-          on top.
+          comparing it with other existing strategies based on games. Consequently, game development
+          was the biggest challenge of this project. For the dashboard, we reduced the development
+          time significantly by building a components library from the NFB dashboard. This library
+          was then used in the NG dashboard, as we implemented only specific features on top.
         </p>
         <p>
           In the end, we were able to deliver the prototype: dashboard, backend APIs, and 7 games,
@@ -218,27 +217,26 @@ const CaseStudy = props => (
         <p>
           The architecture of the NFB project consists of numerous REST APIs serving the dashboard
           and the microcomputer connected to a headset. We developed the backend with Node.js and
-          MySQL. However, there were specific requirements regarding data parsing, validation,
-          persistance, and performance, that were the biggest challenges of this project. The
-          microcomputer, developed by the client&apos;s NFB team, collected and processed the brain
-          wave information before sending it to the backend.
+          MySQL. However, there were specific requirements regarding data parsing, validation, and
+          performance, that were the biggest challenges of this project. The microcomputer,
+          developed by the client&apos;s NFB team, collected and processed the brain wave
+          information before sending it to the backend.
         </p>
         <p>
-          In a first version of the microcomputer, it sent data files with specific structures for
-          the backend to parse, validate, and persist. There were dependencies between files
-          structure. Hence each parsing activity was added as a task into a priority queue from
-          RabbitMQ. We designed a solution that used a modern parser to process the strings of
-          characters from the files into JSON, for being more convenient to validate and persist
-          data in a Node.js environment. The number of entries added to the database could be
-          enormous, in just one session of Neurofeedback with one patient, more specifically 10 of
-          thousands of data points. To comply with a functional design that would respect quick read
-          access when the reports are presented in the dashboard, we opted to use a sharding
-          mechanism to partition the database into small chunks of data. The queries would be more
-          intricated, but we would then get a more significant performance that even with a good
-          indexing strategy wasn&apos;t reachable. The team worked hard to release a stable version
-          for end-to-end testing as both prototype and microcomputer were in development, but the
-          parsing strategy and queue mechanism were sometimes not completely reliable during
-          testing.
+          In a first version, the microcomputer sent data files with specific structures for the
+          backend to parse, validate, and persist. Some of the files had dependencies between each
+          other. Hence each parsing activity was added as a task into priority queues from RabbitMQ.
+          We designed a solution that used a modern parser to process the strings of characters from
+          the files into JSON, for being more convenient to validate and persist data in a Node.js
+          environment. The number of entries added to the database could be enormous, in just one
+          session of Neurofeedback with one patient, more specifically 10 of thousands of data
+          points. To comply with a functional design that would respect quick read access in the
+          dashboard, we opted to use a sharding mechanism to separate the database into small chunks
+          of data. The queries would be more intricated, but we would then get a more significant
+          performance that even with a good indexing strategy wasn&apos;t reachable. Our team worked
+          hard to release a stable version for end-to-end testing as both prototype and
+          microcomputer were continuously in development, but the parsing strategy and queue
+          mechanism were sometimes not completely reliable during testing.
         </p>
         <p>
           Regarding the dashboard, it was developed with React and Redux, and integrated with the
@@ -246,7 +244,7 @@ const CaseStudy = props => (
           management, technician account, and data analysis of each Neurofeedback session with
           charts and tables. We used D3.js for data visualization since several of the presented
           charts were explicitly designed to give the most information possible to the technicians.
-          For frontend performance we included critical-path (above-the-fold) CSS to reduce
+          For frontend performance, we included critical-path (above-the-fold) CSS to reduce
           page-blocking content, assets caching, image optimization, CSS/JS minification via
           webpack, and GZIP compression. Security was also a primary concern for this application.
           Hence, several HTTP headers and good practices were used, environment variables, and JWT

@@ -28,7 +28,7 @@ const CaseStudies = props => (
                 <h3>Mucho</h3>
               </header>
               <p>
-                <a href="http://getmucho.com" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">
                   Mucho
                 </a>{' '}
                 provides a personalized experience for grocery shopping with inspirational recipes
