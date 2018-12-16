@@ -2,16 +2,16 @@
   > div {
     display: flex;
 
-    @include breakpoint(small) {
+    @include breakpoint(xsmall) {
       flex-direction: column;
     }
   }
 
   .post {
     position: relative;
-    width: 25%;
+    width: 33%;
 
-    @include breakpoint(small) {
+    @include breakpoint(xsmall) {
       margin-bottom: 2.4em;
       width: 100%;
     }
