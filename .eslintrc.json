@@ -24,6 +24,12 @@
     }
   },
   "rules": {
-    "compat/compat": 1
+    "compat/compat": 1,
+    "class-methods-use-this": [
+      2,
+      {
+        "exceptMethods": ["render", "componentDidMount"]
+      }
+    ]
   }
 }

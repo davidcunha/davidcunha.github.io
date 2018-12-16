@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
+import IGFeed from '../components/IGFeed';
 
 const About = props => (
   <Layout>
@@ -385,6 +386,10 @@ const About = props => (
         </p>
         <br />
         <Contact />
+        <br />
+        <IGFeed />
+        <br />
+        <br />
       </div>
     </div>
   </Layout>

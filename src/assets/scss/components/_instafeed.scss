@@ -1,0 +1,41 @@
+#instafeed {
+  > div {
+    display: flex;
+
+    @include breakpoint(small) {
+      flex-direction: column;
+    }
+  }
+
+  .post {
+    position: relative;
+    width: 25%;
+
+    @include breakpoint(small) {
+      margin-bottom: 2.4em;
+      width: 100%;
+    }
+  }
+
+  a {
+    border-bottom: none;
+
+    img {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .analytics {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    bottom: -2em;
+    width: 100%;
+
+    > span:first-of-type {
+      margin-right: 1em;
+    }
+  }
+}
