@@ -228,15 +228,15 @@ const CaseStudy = props => (
           other. Hence each parsing activity was added as a task into priority queues from RabbitMQ.
           We designed a solution that used a modern parser to process the strings of characters from
           the files into JSON, for being more convenient to validate and persist data in a Node.js
-          environment. The number of entries added to the database could be enormous, in just one
-          session of Neurofeedback with one patient, more specifically 10 of thousands of data
+          environment. In just one patient&apos;s treatment with Neurofeedback, the number of
+          entries added to the database could be enormous, more specifically 10 of thousands of data
           points. To comply with a functional design that would respect quick read access in the
           dashboard, we opted to use a sharding mechanism to separate the database into small chunks
-          of data. The queries would be more intricated, but we would then get a more significant
-          performance that even with a good indexing strategy wasn&apos;t reachable. Our team worked
-          hard to release a stable version for end-to-end testing as both prototype and
+          of data. The queries would be more intricated, but we would then offer an interactive
+          experience that even with a good indexing strategy wasn&apos;t reachable. Our team worked
+          hard to release a stable version for end-to-end testing, as both prototype and
           microcomputer were continuously in development, but the parsing strategy and queue
-          mechanism were sometimes not completely reliable during testing.
+          mechanism were sometimes not completely reliable during the testing period.
         </p>
         <p>
           Regarding the dashboard, it was developed with React and Redux, and integrated with the
