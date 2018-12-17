@@ -42,6 +42,27 @@ const Experiments = props => (
             rel="noopener noreferrer"
           >
             rt-object-detection.netlify.com
+          </a>{' '}
+          <em>(can take some seconds until it starts to match objects!)</em>
+        </p>
+        <br />
+        <br />
+        <header className="major">
+          <h3>Universal Node</h3>
+        </header>
+        <p>
+          Template for universal Node/React applications. It offers the required tooling for your
+          universal JavaScript application, as well as an opinionated full-stack ready to kick-off
+          your next project.{' '}
+        </p>
+        <p>
+          <i className="icon alt fa-github" />{' '}
+          <a
+            href="https://github.com/davidcunha/universal-node"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            universal-node
           </a>
         </p>
       </div>
