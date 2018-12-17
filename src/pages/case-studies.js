@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
-import Img from 'gatsby-image';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import CaseStudy from '../components/CaseStudy';
 
 const CaseStudies = props => (
   <Layout>
@@ -18,87 +18,44 @@ const CaseStudies = props => (
 
     <div id="main">
       <section id="one" className="spotlights">
-        <section className="case-study">
-          <Link to="/case-studies/mucho" className="image">
-            <Img fluid={props.data.caseStudy1.childImageSharp.fluid} />
-          </Link>
-          <div className="content">
-            <div className="inner">
-              <header className="major">
-                <h3>Mucho</h3>
-              </header>
-              <p>
-                <a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">
-                  Mucho
-                </a>{' '}
-                provides a personalized experience for grocery shopping with inspirational recipes
-                contributed by a trusted community of foodies. With a few clicks, ingredients for
-                recipes and breakfast &amp; snacks are ordered, and a selected supermarket will
-                delivery the order to the customer’s doorstep.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link to="/case-studies/mucho" className="button special">
-                    View Case Study
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section className="case-study">
-          <Link to="/case-studies/neuroscience" className="image">
-            <Img fluid={props.data.caseStudy2.childImageSharp.fluid} />
-          </Link>
-          <div className="content">
-            <div className="inner">
-              <header className="major">
-                <h3>Neuroscience</h3>
-              </header>
-              <p>
-                Neuroscience (client’s name and website disclosed) were two R&amp;D projects that
-                solved distinctive problems through digital therapeutic solutions: Neurofeedback and
-                Neurogames. Neurofeedback had as primary objective to innovate the standard process
-                of assessing patient’s brainwave activity EEG (electroencephalogram) biofeedback. On
-                the other hand, Neurogames was state of the art applied methodology that used HTML5
-                cognitive games to assess and improve patient’s brain functions.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link to="/case-studies/neuroscience" className="button special">
-                    View Case Study
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <section className="case-study">
-          <Link to="/case-studies/cocktail-experience" className="image">
-            <Img fluid={props.data.caseStudy3.childImageSharp.fluid} />
-          </Link>
-          <div className="content">
-            <div className="inner">
-              <header className="major">
-                <h3>Cocktail Experience</h3>
-              </header>
-              <p>
-                Cocktail Experience (client’s name and website disclosed) provides a unique online
-                shopping experience to create and deliver customized cocktails. From flavors to
-                spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or
-                select a bartender recommendation to be quickly delivered to their doorstep for a
-                wonderful party.
-              </p>
-              <ul className="actions">
-                <li>
-                  <Link to="/case-studies/cocktail-experience" className="button special">
-                    View Case Study
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </section>
+        {[
+          {
+            title: 'Mucho',
+            url: 'mucho',
+            description:
+              '<a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">Mucho</a> provides a personalized experience for grocery shopping with inspirational recipes contributed by a trusted community of foodies. With a few clicks, ingredients for recipes and breakfast &amp; snacks are ordered, and a selected supermarket will delivery the order to the customer’s doorstep.',
+            img: props.data.caseStudy1.childImageSharp.fluid,
+          },
+          {
+            title: 'Neuroscience',
+            url: 'neuroscience',
+            description:
+              'Neuroscience (client&apos;s name and website disclosed) were two R&amp;D projects that solved distinctive problems through digital therapeutic solutions: Neurofeedback and Neurogames. Neurofeedback had as primary objective to innovate the standard process of assessing patient&apos;s brainwave activity EEG (electroencephalogram) biofeedback. On the other hand, Neurogames was state of the art applied methodology that used HTML5 cognitive games to assess and improve patient’s brain functions.',
+            img: props.data.caseStudy2.childImageSharp.fluid,
+          },
+          {
+            title: 'Cocktail Experience',
+            url: 'cocktail-experience',
+            description:
+              'Cocktail Experience (client&apos;s name and website disclosed) provides a unique online shopping experience to create and deliver customized cocktails.From flavors to spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or select a bartender recommendation to be quickly delivered to their doorstep for a wonderful party.',
+            img: props.data.caseStudy3.childImageSharp.fluid,
+          },
+          {
+            title: 'Experiments',
+            url: 'experiments',
+            description: 'Open-source tools, snippets, templates, and curiosities.',
+            img: props.data.caseStudy4.childImageSharp.fluid,
+            imgPosition: 'right',
+          },
+        ].map((caseStudy, key) => (
+          <CaseStudy
+            key={`${key}-${caseStudy.url}`}
+            title={caseStudy.title}
+            url={caseStudy.url}
+            description={caseStudy.description}
+            img={caseStudy.img}
+          />
+        ))}
       </section>
     </div>
   </Layout>
@@ -132,6 +89,13 @@ export const query = graphql`
       }
     }
     caseStudy3: file(relativePath: { eq: "cocktail-experience-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy4: file(relativePath: { eq: "experiments-case-study.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 640) {
           ...GatsbyImageSharpFluid_withWebp_noBase64

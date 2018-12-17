@@ -192,7 +192,7 @@ const CaseStudy = props => (
         <br />
         <ul className="actions">
           <li>
-            <Link to="/case-studies/mucho" className="button special">
+            <Link to="/case-studies/experiments" className="button special">
               View Next Case Study
             </Link>
           </li>

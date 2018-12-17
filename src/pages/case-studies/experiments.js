@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { graphql } from 'gatsby';
+import { Link, graphql } from 'gatsby';
 import Helmet from 'react-helmet';
-import Layout from '../components/layout';
-import Banner from '../components/Banner';
+import Layout from '../../components/layout';
+import Banner from '../../components/Banner';
 
 const Experiments = props => (
   <Layout>
@@ -13,7 +13,7 @@ const Experiments = props => (
       <meta name="description" content="Experiments" />
     </Helmet>
 
-    <Banner title="Experiments" bgImg={props.data.experiments.childImageSharp.fluid} />
+    <Banner title="Experiments" bgImg={props.data.caseStudyImg.childImageSharp.fluid} />
 
     <div id="main">
       <div className="inner">
@@ -92,6 +92,15 @@ const Experiments = props => (
             instafeed.es6
           </a>
         </p>
+        <br />
+        <br />
+        <ul className="actions">
+          <li>
+            <Link to="/case-studies/mucho" className="button special">
+              View Next Case Study
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
   </Layout>
@@ -103,7 +112,7 @@ Experiments.propTypes = {
 
 export const query = graphql`
   query {
-    experiments: file(relativePath: { eq: "experiments.jpg" }) {
+    caseStudyImg: file(relativePath: { eq: "experiments-case-study.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
