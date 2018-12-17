@@ -56,8 +56,8 @@ const CaseStudies = props => (
                 <h3>Neuroscience</h3>
               </header>
               <p>
-                Neuroscience (client’s name and website disclosed) were two R&D projects that solved
-                distinctive problems through digital therapeutic solutions: Neurofeedback and
+                Neuroscience (client’s name and website disclosed) were two R&amp;D projects that
+                solved distinctive problems through digital therapeutic solutions: Neurofeedback and
                 Neurogames. Neurofeedback had as primary objective to innovate the standard process
                 of assessing patient’s brainwave activity EEG (electroencephalogram) biofeedback. On
                 the other hand, Neurogames was state of the art applied methodology that used HTML5

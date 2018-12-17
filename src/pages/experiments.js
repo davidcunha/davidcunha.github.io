@@ -65,6 +65,33 @@ const Experiments = props => (
             universal-node
           </a>
         </p>
+        <br />
+        <br />
+        <header className="major">
+          <h3>Instafeed ES6</h3>
+        </header>
+        <p>
+          Instafeed is a dead-simple way to add Instagram photos to your website. This is a
+          continuation and a remake of{' '}
+          <a
+            href="https://github.com/stevenschobert/instafeed.js"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Steven Schobert&apos;s original instafeed.js
+          </a>{' '}
+          in order to provide ES6 support.{' '}
+        </p>
+        <p>
+          <i className="icon alt fa-github" />{' '}
+          <a
+            href="https://github.com/davidcunha/instafeed.es6"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            instafeed.es6
+          </a>
+        </p>
       </div>
     </div>
   </Layout>
