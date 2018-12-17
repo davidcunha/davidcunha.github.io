@@ -21,9 +21,8 @@ const Experiments = props => (
           <h3>Real-time object detection</h3>
         </header>
         <p>
-          This experiment uses TensorFlow.js with COCO-SSD model. It can take any input from
-          &#60;img&#62;, &#60;video&#62;, &#60;canvas&#62; elements, and returns an array of
-          bounding boxes with class name and confidence level.{' '}
+          This experiment uses TensorFlow.js with COCO-SSD model. It takes a real-time input from a
+          webcam and returns an array of bounding boxes with respective classification.{' '}
         </p>
         <p>
           <i className="icon alt fa-github" />{' '}
