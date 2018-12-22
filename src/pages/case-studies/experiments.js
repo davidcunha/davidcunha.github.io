@@ -93,6 +93,33 @@ const Experiments = props => (
         </p>
         <br />
         <br />
+        <header className="major">
+          <h3>TestCafe HTML Reporter</h3>
+        </header>
+        <p>
+          HTML reporter generator for{' '}
+          <a
+            href="https://devexpress.github.io/testcafe/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TestCafe
+          </a>{' '}
+          automated tests. It provides an HTML report of a TestCafe task(s) execution, as well as
+          feedback on the errors, if these occurred.
+        </p>
+        <p>
+          <i className="icon alt fa-github" />{' '}
+          <a
+            href="https://github.com/davidcunha/testcafe-reporter-html"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            testcafe-reporter-html
+          </a>
+        </p>
+        <br />
+        <br />
         <ul className="actions">
           <li>
             <Link to="/case-studies/mucho" className="button special">
