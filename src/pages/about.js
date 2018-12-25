@@ -136,7 +136,7 @@ const About = props => (
           </span>
         </p>
         <p>
-          <strong>That’s when my journey to become a ‘Product Engineer’ started!</strong>
+          <strong>That’s when my journey to become a <em>Software Engineer</em> started!</strong>
         </p>
         <p>
           I joined web product development agencies where I had the opportunity to meet founders
