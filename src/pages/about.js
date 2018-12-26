@@ -43,6 +43,12 @@ const About = props => (
           <br />
         </p>
         <br />
+        <p>
+          <span role="img" aria-label="emoji">
+            📩{' '}
+          </span>
+          Feel free to contact me for projects and collaborations
+        </p>
         <Contact />
       </div>
       <div className="inner">
@@ -136,7 +142,9 @@ const About = props => (
           </span>
         </p>
         <p>
-          <strong>That’s when my journey to become a <em>Software Engineer</em> started!</strong>
+          <strong>
+            That’s when my journey to become a <em>Software Engineer</em> started!
+          </strong>
         </p>
         <p>
           I joined web product development agencies where I had the opportunity to meet founders
