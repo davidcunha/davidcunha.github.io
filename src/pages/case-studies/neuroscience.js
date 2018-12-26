@@ -269,12 +269,13 @@ const CaseStudy = props => (
           analysis results and determination of the right games sequence for that specific patient.
         </p>
         <p>
-          The Games UI was developed in JavaScript, recurring to the Pixi.js engine. Pixi is one of
-          the most mature solutions for HTML5 games that allowed us to have the whole team working
-          under the same development workflow. As we know, the behavior of the same features in
-          different browsers is not reliable. During the games development, there was a fundamental
+          The Games UI was developed in JavaScript, using the Pixi.js engine. Pixi is one of the
+          most mature solutions for HTML5 games that allowed us to have the whole team working under
+          the same development workflow. As we know, the behavior of the same features across
+          different browsers is not reliable. During the games development, there was fundamental
           research about time precision and 60fps animations for the web, focused solely on Chrome,
-          our unique browser to provide support in this initial release:{' '}
+          our unique browser to provide support in this initial release. As a result, we used two
+          native APIs to comply with the requirements we had for response time:{' '}
           <em>
             <a
               href="https://developer.mozilla.org/en-US/docs/Web/API/Performance/now"
@@ -293,24 +294,24 @@ const CaseStudy = props => (
             >
               window.requestAnimationFrame()
             </a>
-          </em>{' '}
-          are native APIs that enabled the Games to comply with the requirements we had for response
-          time. The data collected from the patient interaction with the keyboard during a game
-          session was pre-processed in the frontend side before being sent to the backend. The
-          metrics engine was in charge of validating and preparing the data for exploratory
-          analysis. The 7 games were developed and released for internal testing in sequence. This
-          testing process that was split between our team and the client&apos;s team was very time
-          consuming, as it required human intervention to test possible scenarios and replicated any
-          findings. We are sure that automation would have reduced the testing time and bring more
-          confidence to the release code. Unfortunately, we didn&apos;t find a more productive and
-          accessible way within the 6-month deadline and resources both teams had available.
+          </em>
+          . The data collected from the patient interaction with the keyboard during a game session
+          was pre-processed in the frontend side before being sent to the backend, where the metrics
+          engine validated and prepared the data points for exploratory analysis. We defined as our
+          strategy to develop and test the games in sequence, starting from game 1 to game 7. This
+          testing process that was split between our team and the client&apos;s team denoted itself
+          as time-consuming, because it required human intervention to test possible scenarios and
+          replicated any findings. We are sure that automation would have reduced the testing time
+          and brought confidence to the released code. Unfortunately, we didn&apos;t find a more
+          productive and accessible way within the 6-month deadline and resources both teams had
+          available.
         </p>
         <p>
           Regarding the dashboard, as mentioned, we reduced the development time significantly by
           building a components library from the NFB dashboard. This library had every component we
           needed for the NG dashboard, the only difference being that the Games UI were integrated
-          with the dashboard in order to offer a seamless experience for the technician that is
-          conducting the treatment.
+          with the dashboard in order to provide a seamless experience for the technician conducting
+          the treatment.
         </p>
         <p>
           The backend infrastructure was set up in a Private Cloud, as required by the client, who
