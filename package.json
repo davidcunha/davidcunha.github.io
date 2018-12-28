@@ -14,7 +14,7 @@
     "gatsby-plugin-sharp": "^2.0.15",
     "gatsby-source-filesystem": "^2.0.12",
     "gatsby-transformer-sharp": "^2.1.9",
-    "instafeed.es6": "^1.1.0",
+    "instafeed.js": "^1.4.1",
     "node-sass": "^4.9.3",
     "prop-types": "^15.6.2",
     "react": "^16.5.1",

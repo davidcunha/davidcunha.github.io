@@ -1,10 +1,8 @@
 #instafeed {
-  > div {
-    display: flex;
+  display: flex;
 
-    @include breakpoint(xsmall) {
-      flex-direction: column;
-    }
+  @include breakpoint(xsmall) {
+    flex-direction: column;
   }
 
   .post {

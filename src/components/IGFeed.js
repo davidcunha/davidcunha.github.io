@@ -1,5 +1,5 @@
 import React from 'react';
-import Instafeed from 'instafeed.es6';
+import Instafeed from 'instafeed.js';
 
 class IGFeed extends React.Component {
   componentDidMount() {
