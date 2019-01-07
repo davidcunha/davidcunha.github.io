@@ -73,6 +73,18 @@ const About = props => (
         <br />
         <div className="quote">
           <blockquote>
+            “David is an exceptionally talented developer who always goes above and beyond to meet
+            and exceed client expectations. David would be an asset to any team he works for in
+            future”
+          </blockquote>
+          <div className="author">
+            <strong>Ciara Clancy - CEO @ Beats Medical</strong>
+          </div>
+        </div>
+        <br />
+        <br />
+        <div className="quote">
+          <blockquote>
             “Working with David, it’s just a pleasure! I can easily say that he is the person that I
             most respect professionally - hardworking, talented, caring, perfectionist, trustworthy,
             humble - The truth is that I could go on with words to describe him. Amazing talented
