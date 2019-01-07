@@ -75,7 +75,7 @@ const About = props => (
           <blockquote>
             “David is an exceptionally talented developer who always goes above and beyond to meet
             and exceed client expectations. David would be an asset to any team he works for in
-            future”
+            future.”
           </blockquote>
           <div className="author">
             <strong>Ciara Clancy - CEO @ Beats Medical</strong>
