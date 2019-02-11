@@ -11,11 +11,11 @@ class IGFeed extends React.Component {
       template: `<div class="post">
           <a href="{{link}}" target="_blank" id="{{id}}">
             <img src="{{image}}" />
-            <div class="analytics">
-              <span class="likes"><i class="fa fa-heart-o"></i> {{likes}}</span>
-              <span class="comments"><i class="fa fa-comment-o"></i> {{comments}}</span>
-            </div>
           </a>
+          <div class="analytics">
+            <span class="likes"><i class="fa fa-heart-o"></i> {{likes}}</span>
+            <span class="comments"><i class="fa fa-comment-o"></i> {{comments}}</span>
+          </div>
         </div>
       `,
       sortBy: 'most-recent',
