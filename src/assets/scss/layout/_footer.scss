@@ -3,6 +3,7 @@
 #footer {
   border-top: 1px solid _palette(border);
 
+  .nav,
   .copyright {
     font-size: 0.8em;
     list-style: none;
@@ -24,7 +25,12 @@
     }
   }
 
+  .nav {
+    font-size: 1em;
+  }
+
   @include breakpoint(xsmall) {
+    .nav,
     .copyright {
       li {
         display: block;

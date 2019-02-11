@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'gatsby';
 
 const Footer = () => (
   <footer id="footer">
@@ -45,14 +46,19 @@ const Footer = () => (
           </a>
         </li>
       </ul>
+      <ul className="nav">
+        <li>
+          <Link to="/">About</Link>
+        </li>
+        <li>
+          <Link to="/process">Process</Link>
+        </li>
+        <li>
+          <Link to="/case-studies">Case Studies</Link>
+        </li>
+      </ul>
       <ul className="copyright">
         <li>David Cunha - {new Date().getFullYear()}</li>
-        <li>
-          Built with{' '}
-          <a href="https://gatsbyjs.org" target="_blank" rel="noopener noreferrer">
-            Gatsby
-          </a>
-        </li>
       </ul>
     </div>
   </footer>
