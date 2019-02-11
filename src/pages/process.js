@@ -68,8 +68,8 @@ const Process = props => (
           <h3>Software Stack</h3>
         </header>
         <p>
-          As you can read a bit more <Link to="/about">about me</Link>, I had the opportunity to
-          work on several projects from frontend to backend and distributed computing.
+          As you can read a bit more <Link to="/">about me</Link>, I had the opportunity to work on
+          several projects from frontend to backend and distributed computing.
         </p>
         <p>My current stack:</p>
         <ul>
