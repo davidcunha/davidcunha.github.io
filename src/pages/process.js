@@ -188,7 +188,7 @@ const Process = props => (
         </p>
         <ul className="actions">
           <li>
-            <Link to="/case-studies" className="button special">
+            <Link to="/case-studies/mucho" className="button special">
               View Case Studies
             </Link>
           </li>

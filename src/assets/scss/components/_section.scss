@@ -8,9 +8,9 @@ article {
 }
 
 section.case-study {
-  margin: 8em auto;
+  margin: 6em 0;
   max-width: _size(inner);
-  width: calc(100% - 6em);
+  width: 100%;
 
   @include breakpoint(medium) {
     margin: auto;

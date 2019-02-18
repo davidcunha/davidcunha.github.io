@@ -18,7 +18,7 @@ const Menu = props => (
           </Link>
         </li>
         <li>
-          <Link onClick={props.onToggleMenu} to="/case-studies">
+          <Link onClick={props.onToggleMenu} to="/case-studies/mucho">
             Case Studies
           </Link>
         </li>

@@ -90,7 +90,7 @@
       }
 
       > .content {
-        @include padding(3em, 1.5em, (0, 0, 0, 0), true);
+        @include padding(3em, 0, (0, 0, 0, 0), true);
       }
     }
   }

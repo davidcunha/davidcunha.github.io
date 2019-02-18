@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link, graphql } from 'gatsby';
+import { graphql } from 'gatsby';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import IGFeed from '../components/IGFeed';
+import CaseStudy from '../components/CaseStudy';
 
 const About = props => (
   <Layout>
@@ -20,9 +21,9 @@ const About = props => (
     <div id="main">
       <div className="inner">
         <p>
-          I’m a professional Software Engineer and Scrum Master with more than 6 years of experience
-          based in sunny Portugal. Interested in building scalable web apps and businesses that make
-          people happy.
+          I&apos;m a professional Software Engineer and Scrum Master with more than 6 years of
+          experience based in sunny Portugal. Interested in building scalable web apps and
+          businesses that make people happy.
         </p>
         <p>I love to:</p>
         <p>
@@ -44,10 +45,19 @@ const About = props => (
         </p>
         <br />
         <p>
+          Building a business isn&apos;t easy. Even worse a profitable one. As an Engineer close to
+          business decisions and building features that can impact the happiness of end-users and
+          consequently product&apos;s growth, I get acquainted with the business domain I&apos;m
+          working on. Knowing how to explain technical decisions to non-tech-savvy, and how to help
+          businesses get the most value by asking the right questions, is what I believe is
+          fundamental to succeed.
+        </p>
+        <br />
+        <p>
           <span role="img" aria-label="emoji">
             📩{' '}
           </span>
-          Feel free to contact me for projects and collaborations
+          Feel free to contact me for projects and collaborations.
         </p>
         <Contact />
       </div>
@@ -85,11 +95,11 @@ const About = props => (
         <br />
         <div className="quote">
           <blockquote>
-            “Working with David, it’s just a pleasure! I can easily say that he is the person that I
-            most respect professionally - hardworking, talented, caring, perfectionist, trustworthy,
-            humble - The truth is that I could go on with words to describe him. Amazing talented
-            people like David are hard to stick with you on your team because they are never
-            satisfied and always pushing the bar. I couldn’t recommend him more.”
+            “Working with David, it&apos;s just a pleasure! I can easily say that he is the person
+            that I most respect professionally - hardworking, talented, caring, perfectionist,
+            trustworthy, humble - The truth is that I could go on with words to describe him.
+            Amazing talented people like David are hard to stick with you on your team because they
+            are never satisfied and always pushing the bar. I couldn&apos;t recommend him more.”
           </blockquote>
           <div className="author">
             <strong>Ricardo Parente - CEO @ PICUS.</strong>
@@ -97,256 +107,51 @@ const About = props => (
         </div>
         <br />
         <br />
-        <div className="quote">
-          <blockquote>
-            “I have been working, for some time now, with David in some side projects and own ideas
-            of ours. I have to say it’s an absolute joy to work with him. Besides being objective
-            and very pragmatic, he is not satisfied with any solution, but the right one(the right
-            tool, for the job). Besides this, the fact of being a good colleague, makes a painful
-            job, a more enjoyable experience. Would really like to have the opportunity to work with
-            him full time.”
-          </blockquote>
-          <div className="author">
-            <strong>Rui Peres - Engineering Manager @ Babylon Health</strong>
-          </div>
-        </div>
-        <br />
-        <br />
-        <ul className="actions">
-          <li>
-            <Link to="/case-studies" className="button special">
-              View Case Studies
-            </Link>
-          </li>
-        </ul>
       </div>
       <div className="inner">
         <header className="major">
-          <h3>Full version</h3>
+          <h3>Case Studies</h3>
         </header>
-        <p>
-          I started as a self-taught programmer a couple of years ago, and as many devs, I suffered
-          from <em>impostor syndrome</em> early in my career. I always compared myself to other
-          peers and felt terrible because my foundations weren’t rock-solid at a time the team
-          needed me for delivering high-quality code.
-        </p>
-        <p>And my dear friends, this feeling can hit you hard...</p>
-        <p>
-          So I spent years reading books, networking with other developers, and most importantly
-          coding different type of projects from frontend to backend and distributed computing,
-          while I was working in several companies.
-        </p>
-        <p>
-          At the beginning of my path, I was a Researcher in the field of{' '}
-          <strong>Cloud Computing</strong> where I met brilliant folks in all over Europe from whom
-          I learned fundamental concepts for building computing resources’ allocation recommendation
-          algorithms - fancy schmancy{' '}
-          <span role="img" aria-label="emoji">
-            😆
-          </span>
-          . However, none of my efforts were targeted to build actual products that normal people
-          would use. Believe me, R&amp;D is paramount for brainstorming and delivering, today, what
-          could be tomorrow’s products. However, at that time, what I really wanted was to solve
-          real problems from end-users and to be part of the delivery pipeline of an{' '}
-          <strong>Agile</strong> team{' '}
-          <span role="img" aria-label="emoji">
-            🚀
-          </span>
-        </p>
-        <p>
-          <strong>
-            That’s when my journey to become a <em>Software Engineer</em> started!
-          </strong>
-        </p>
-        <p>
-          I joined web product development agencies where I had the opportunity to meet founders
-          from Startups that aimed to build sustainable businesses from their dreams. Back in the
-          day,{' '}
-          <strong>
-            <a href="https://rubyonrails.org/" target="_blank" rel="noopener noreferrer">
-              Ruby on Rails
-            </a>
-          </strong>{' '}
-          was the go-to framework - quick, predictable and fun to use, it made possible our clients’
-          ideas and <strong>MVPs</strong>, respecting performance requirements and deadlines. I was
-          really into the RoR and <strong>Ruby</strong> community, that I participated in
-          conferences, Slack groups, wrote gems, and felt that great vibe around beautiful and
-          well-tested code. Ah yes… <strong>TDD</strong> and testing in general are absolutely
-          cemented in the Ruby devs mindset.
-        </p>
-        <p>
-          <strong>Ruby on Rails</strong> was used when we were building from scratch, but from time
-          to time I rescued projects and helped Startups to meet their vision:{' '}
-          <strong>Java, PHP, Laravel, Python, Backbone.js, Sass, React</strong>, well you name it.
-          As Software Engineers be prepared to learn different programming languages and frameworks,
-          but with the experience, you will notice that standard computer science concepts and
-          paradigms are still being applied every day.
-        </p>
-        <p>
-          At that time{' '}
-          <strong>
-            <a href="https://nodejs.org/" target="_blank" rel="noopener noreferrer">
-              Node.js
-            </a>
-          </strong>{' '}
-          was the new kid on the block{' '}
-          <span role="img" aria-label="emoji">
-            😎
-          </span>
-          . Non-blocking IO, real-time communications, capable of handling a great number of
-          simultaneous connections with high throughput. After consuming content from{' '}
-          <a href="https://twitter.com/substack" target="_blank" rel="noopener noreferrer">
-            @substack
-          </a>
-          ,{' '}
-          <a href="https://twitter.com/mikeal" target="_blank" rel="noopener noreferrer">
-            @mikeal
-          </a>
-          ,{' '}
-          <a href="https://twitter.com/izs" target="_blank" rel="noopener noreferrer">
-            @izs
-          </a>{' '}
-          or{' '}
-          <a href="https://twitter.com/dshaw" target="_blank" rel="noopener noreferrer">
-            @dshaw
-          </a>
-          , I felt mesmerized with what Node could be for the future web stack, and well it did! I
-          coded and learned, in my free time, many concepts around streams, networking, callbacks,
-          and web sockets. I recall as being a great experience that took me to the next level.
-          Coming from Ruby, the Node community was distinctive, but at its genesis, they had the
-          same open-source values and productive tools, plus everything was async! I was sold.
-        </p>
-        <p>
-          In the last years, the <strong>JavaScript ecosystem grew exponentially</strong>, and you
-          can now code a full-stack application with only one language (if you put aside SQL,
-          markups, and stylesheets). Isn’t it awesome?{' '}
-          <span role="img" aria-label="emoji">
-            🎉
-          </span>{' '}
-          Been sometime now that I can say that JavaScript is my daily programming language.
-        </p>
-        <p>
-          For beginners or even seasoned developers, important language details can be daunting. I
-          assure you that after reading{' '}
-          <a
-            href="https://github.com/getify/You-Dont-Know-JS"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            You-Dont-Know-JS
-          </a>{' '}
-          by{' '}
-          <a href="https://twitter.com/getify" target="_blank" rel="noopener noreferrer">
-            @getify
-          </a>{' '}
-          you’ll start to get it. Go read it, select the chapters that you most want to learn about,{' '}
-          <a href="https://twitter.com/getify" target="_blank" rel="noopener noreferrer">
-            @getify
-          </a>
-          ’s writing is insightful and full of in-depth examples.
-        </p>
-        <p>
-          Coding isn’t all it matters to me.{' '}
-          <strong>Building a business isn’t easy. Even worst a profitable one.</strong> As an
-          Engineer close to business decisions and building features that can impact the happiness
-          of end-users and consequently product’s growth, I needed to get acquainted with the
-          business domain I was working on. Knowing how to explain technical decisions to laymen,
-          driving the communication, and how to push back a requirement when I saw associate risks
-          involved, is paramount to succeed!
-        </p>
-        <p>Some of my favourite books:</p>
-        <ul>
-          <li>
-            <strong>
-              <a
-                href="https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Lean Startup
-              </a>
-            </strong>{' '}
-            by Eric Ries
-          </li>
-          <li>
-            <strong>
-              <a
-                href="https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Zero to One
-              </a>
-            </strong>{' '}
-            by Peter Thiel and Blake Masters
-          </li>
-          <li>
-            <strong>
-              <a
-                href="https://www.amazon.com/Scrum-Doing-Twice-Work-Half/dp/038534645X"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Scrum: The Art of Doing Twice the Work in Half the Time
-              </a>
-            </strong>{' '}
-            by Jeff Sutherland
-          </li>
-          <li>
-            <strong>
-              <a href="http://www.gv.com/sprint/" target="_blank" rel="noopener noreferrer">
-                Design Sprint
-              </a>
-            </strong>{' '}
-            by Jake Knapp, John Zeratsky and Braden Kowitz
-          </li>
-          <li>
-            <strong>
-              <a
-                href="https://www.amazon.com/Mythical-Man-Month-Software-Engineering-Anniversary/dp/0201835959"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                The Mythical Man-Month
-              </a>
-            </strong>{' '}
-            by Frederick P. Brooks, Jr
-          </li>
-          <li>
-            <strong>
-              <a
-                href="https://www.amazon.com/Business-Model-Generation-Visionaries-Challengers/dp/0470876417"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Business Model Generation
-              </a>
-            </strong>{' '}
-            by Alexander Osterwalder and Yves Pigneur
-          </li>
-        </ul>
-        <p>
-          These books really opened my mind to entrepreneurship, management, productivity, the art
-          of keeping it simple, and how to work as a Startup, which makes sense, as I’m currently
-          working mainly for Startups‍{' '}
-          <span role="img" aria-label="emoji">
-            😃
-          </span>
-        </p>
-        <p>
-          Although bear that none of the concepts learned are silver bullets. There will still be
-          moments of anxiety over meeting deadlines, poor communication, frustration with
-          technology, low energy, or people not supporting your ideas, even with the best team
-          available. Connecting the dots, emotional intelligence, and the culture you can nourish
-          around you is what can make the difference in the end.
-        </p>
-        <p>
-          With the experience acquired all over the years, I’m now regularly giving training to
-          small to medium sized teams, mentoring CS students and was invited to teach in Northen
-          Portugal Universities. Besides mentorship, I also act as a facilitator between the
-          Development team and the Product Owner in order to build high-performance teams and
-          excellent products.
-        </p>
+        <section id="one" className="spotlights">
+          {[
+            {
+              title: 'Mucho',
+              url: 'mucho',
+              description:
+                '<a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">Mucho</a> provides a personalized experience for grocery shopping with inspirational recipes contributed by a trusted community of foodies. With a few clicks, ingredients for recipes and breakfast &amp; snacks are ordered, and a selected supermarket will delivery the order to the customer&apos;s doorstep.',
+              img: props.data.caseStudy1.childImageSharp.fluid,
+            },
+            {
+              title: 'Neuroscience',
+              url: 'neuroscience',
+              description:
+                'Neuroscience (client&apos;s name and website disclosed) were two R&amp;D projects that solved distinctive problems through digital therapeutic solutions: Neurofeedback and Neurogames. Neurofeedback had as primary objective to innovate the standard process of assessing patient&apos;s brainwave activity EEG (electroencephalogram) biofeedback. On the other hand, Neurogames was state of the art applied methodology that used HTML5 cognitive games to assess and improve patient&apos;s brain functions.',
+              img: props.data.caseStudy2.childImageSharp.fluid,
+            },
+            {
+              title: 'Cocktail Experience',
+              url: 'cocktail-experience',
+              description:
+                'Cocktail Experience (client&apos;s name and website disclosed) provides a unique online shopping experience to create and deliver customized cocktails.From flavors to spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or select a bartender recommendation to be quickly delivered to their doorstep for a wonderful party.',
+              img: props.data.caseStudy3.childImageSharp.fluid,
+            },
+            {
+              title: 'Experiments',
+              url: 'experiments',
+              description: 'Open-source tools, snippets, templates, and curiosities.',
+              img: props.data.caseStudy4.childImageSharp.fluid,
+              imgPosition: 'right',
+            },
+          ].map((caseStudy, key) => (
+            <CaseStudy
+              key={`${key}-${caseStudy.url}`}
+              title={caseStudy.title}
+              url={caseStudy.url}
+              description={caseStudy.description}
+              img={caseStudy.img}
+            />
+          ))}
+        </section>
       </div>
       <div className="inner">
         <header className="major">
@@ -355,29 +160,29 @@ const About = props => (
         <ul>
           <li>I have an idea for a project. How should I approach it?</li>
           <li>
-            We have a ton of bugs because we’re not applying testing. What and how should I test?
+            We have a ton of bugs because we&apos;re not applying testing. What and how should I
+            test?
           </li>
           <li>I need to grow my backend/full-stack team.</li>
           <li>
-            What do you think about &lt;<em>tech-name-here</em>&gt; ? Should we use it?
+            What do you think about &lt;<em>tech-name-here</em>&gt;? Should we use it?
           </li>
-          <li>We’re shipping software, but we carry over every Sprint. What should we do?</li>
+          <li>We&apos;re shipping software, but we carry over every Sprint. What should we do?</li>
           <li>How can I make this code work?</li>
           <li>How can I improve this code?</li>
-        </ul>
-        <ul className="actions">
-          <li>
-            <Link to="/case-studies" className="button special">
-              View Case Studies
-            </Link>
-          </li>
         </ul>
       </div>
       <div className="inner">
         <header className="major">
           <h3>Training</h3>
         </header>
-        <p>I’m currently giving training in the following subjects:</p>
+        <p>
+          With the experience acquired, I&apos;m now regularly giving training to small to medium
+          sized teams, mentoring CS students and invited to teach in Northen Portugal Universities.
+          Besides mentorship, I also act as a facilitator between the Development team and the
+          Product Owner in order to build high-performance teams and excellent products.
+        </p>
+        <p>I&apos;m currently giving training in the following subjects:</p>
         <ul>
           <li>Git and Github</li>
           <li>Scrum</li>
@@ -395,11 +200,11 @@ const About = props => (
           <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">
             Mail me here
           </a>{' '}
-          for pricing, and I’ll be very happy to help you, your team or your students!
+          for pricing, and I&apos;ll be very happy to help you, your team or your students!
         </p>
         <p>
-          Ah! And every weekday, I’m available for a direct or remote 30-minute free session between
-          18:00-20:00 (GMT). Just contact me via Email to schedule it{' '}
+          Ah! And every weekday, I&apos;m available for a direct or remote 30-minute free session
+          between 18:00-20:00 (GMT). Just contact me via Email to schedule it{' '}
           <span role="img" aria-label="emoji">
             🤙
           </span>
@@ -424,6 +229,34 @@ export const query = graphql`
     about: file(relativePath: { eq: "about.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy1: file(relativePath: { eq: "mucho-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy2: file(relativePath: { eq: "neuroscience-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy3: file(relativePath: { eq: "cocktail-experience-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    caseStudy4: file(relativePath: { eq: "experiments-case-study.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 640) {
           ...GatsbyImageSharpFluid_withWebp_noBase64
         }
       }
