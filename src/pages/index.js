@@ -12,8 +12,52 @@ const About = props => (
   <Layout>
     <Helmet>
       <html lang="en" />
-      <title>About</title>
-      <meta name="description" content="About" />
+      <title>davidcunha.xyz</title>
+      <meta charSet="utf-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+      <meta
+        name="description"
+        content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
+      />
+      <meta itemProp="image" content={props.data.about.childImageSharp.fluid} />
+      <meta property="og:image" content={props.data.about.childImageSharp.fluid} />
+      <meta property="og:image:alt" content="davidcunha.xyz" />
+      <meta property="og:image:width" content="260" />
+      <meta property="og:image:height" content="260" />
+      <meta property="og:url" content="https://davidcunha.xyz" />
+      <meta property="og:type" content="website" />
+      <meta property="og:locale" content="en_GB" />
+      <meta property="og:title" content="davidcunha.xyz" />
+      <meta
+        property="og:description"
+        content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
+      />
+      <meta name="twitter:image" content={props.data.about.childImageSharp.fluid} />
+      <meta property="twitter:image:width" content="260" />
+      <meta property="twitter:image:height" content="260" />
+      <meta
+        property="twitter:description"
+        content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
+      />
+      <meta name="robots" content="index,follow" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="HandheldFriendly" content="True" />
+      <meta name="MobileOptimized" content="320" />
+      <meta name="apple-mobile-web-app-title" content="davidcunha.xyz" />
+      <meta name="apple-mobile-web-app-capable" content="yes" />
+      <meta name="apple-touch-fullscreen" content="yes" />
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+      <meta name="application-name" content="davidcunha.xyz" />
+      <meta name="msapplication-TileColor" content="#FCFCFC" />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-127658443-1" />
+      <script>
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-127658443-1');
+            `}
+      </script>
     </Helmet>
 
     <Banner title="Hi, my name is David" bgImg={props.data.about.childImageSharp.fluid} />
