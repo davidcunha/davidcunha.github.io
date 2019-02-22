@@ -7,6 +7,7 @@ import Banner from '../components/Banner';
 import Contact from '../components/Contact';
 import IGFeed from '../components/IGFeed';
 import CaseStudy from '../components/CaseStudy';
+import about from '../assets/images/about.jpg';
 
 const About = props => (
   <Layout>
@@ -19,8 +20,8 @@ const About = props => (
         name="description"
         content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
       />
-      <meta itemProp="image" content={props.data.about.childImageSharp.fluid} />
-      <meta property="og:image" content={props.data.about.childImageSharp.fluid} />
+      <meta itemProp="image" content={about} />
+      <meta property="og:image" content={about} />
       <meta property="og:image:alt" content="davidcunha.xyz" />
       <meta property="og:image:width" content="260" />
       <meta property="og:image:height" content="260" />
@@ -32,7 +33,7 @@ const About = props => (
         property="og:description"
         content="Hello, I’m David. I’m a professional Software Engineer and Scrum Master with more than 6 years of experience. Interested in building scalable web apps and businesses that make people happy."
       />
-      <meta name="twitter:image" content={props.data.about.childImageSharp.fluid} />
+      <meta name="twitter:image" content={about} />
       <meta property="twitter:image:width" content="260" />
       <meta property="twitter:image:height" content="260" />
       <meta
