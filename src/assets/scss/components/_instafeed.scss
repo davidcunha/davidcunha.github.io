@@ -1,5 +1,6 @@
 #instafeed {
   display: flex;
+  flex-wrap: wrap;
 
   @include breakpoint(xsmall) {
     flex-direction: column;
@@ -7,10 +8,10 @@
 
   .post {
     position: relative;
+    margin-bottom: 2.4em;
     width: 33%;
 
     @include breakpoint(xsmall) {
-      margin-bottom: 2.4em;
       width: 100%;
     }
   }
