@@ -28,7 +28,7 @@
     "serve": "gatsby serve",
     "develop": "gatsby develop",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix . && stylelint --fix \"**/*.scss\" && git add"
+    "lint": "eslint --fix . && stylelint --fix \"**/*.scss\" && git add ."
   },
   "husky": {
     "hooks": {
