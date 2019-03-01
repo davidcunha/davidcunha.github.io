@@ -208,7 +208,7 @@ const About = props => (
             We have a ton of bugs because we&apos;re not applying testing. What and how should I
             test?
           </li>
-          <li>I need to grow my backend/full-stack team.</li>
+          <li>I need to grow my team and/or implement processes</li>
           <li>
             What do you think about &lt;<em>tech-name-here</em>&gt;? Should we use it?
           </li>
