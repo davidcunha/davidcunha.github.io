@@ -1,9 +1,5 @@
 const path = require('path');
 
-require('dotenv').config({
-  path: `.env.${process.env.NODE_ENV}`,
-});
-
 module.exports = {
   siteMetadata: {
     title: 'davidcunha.xyz',
@@ -13,11 +9,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-offline',
+    'gatsby-transformer-sharp',
+    'gatsby-plugin-sharp',
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         name: 'images',
-        path: path.join(__dirname, 'src', 'assets', 'images'),
+        path: path.join(__dirname, 'src', 'images'),
       },
     },
     {
@@ -26,15 +25,11 @@ module.exports = {
         name: 'davidcunha.xyz',
         short_name: 'davidcunha',
         start_url: '/',
-        background_color: '#FCFCFC',
-        theme_color: '#FCFCFC',
+        background_color: '#171717',
+        theme_color: '#171717',
         display: 'minimal-ui',
-        icon: 'src/assets/images/computer-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/computer-icon.png',
       },
     },
-    'gatsby-plugin-sass',
-    'gatsby-plugin-offline',
-    'gatsby-transformer-sharp',
-    'gatsby-plugin-sharp',
   ],
 };

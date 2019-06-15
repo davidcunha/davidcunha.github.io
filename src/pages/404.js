@@ -1,25 +1,12 @@
 import React from 'react';
-import Layout from '../components/layout';
+import SEO from '../components/seo';
 
 const NotFoundPage = () => (
-  <Layout>
-    <div id="main" className="alt">
-      <section id="one">
-        <div className="inner">
-          <h1>
-            <span role="img" aria-label="emoji">
-              ⛔️
-            </span>{' '}
-            NOT FOUND{' '}
-            <span role="img" aria-label="emoji">
-              ⛔️
-            </span>
-          </h1>
-          <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
-        </div>
-      </section>
-    </div>
-  </Layout>
+  <div>
+    <SEO title="404: Not found" />
+    <h1>NOT FOUND</h1>
+    <p>You just hit a route that doesn&#39;t exist... the sadness.</p>
+  </div>
 );
 
 export default NotFoundPage;

@@ -20,16 +20,10 @@
   },
   "settings": {
     "react": {
-      "version": "16.5"
+      "version": "16.8"
     }
   },
   "rules": {
-    "compat/compat": 1,
-    "class-methods-use-this": [
-      2,
-      {
-        "exceptMethods": ["render", "componentDidMount"]
-      }
-    ]
+    "compat/compat": 1
   }
 }
