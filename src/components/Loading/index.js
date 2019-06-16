@@ -1,6 +1,10 @@
-import React from 'react';
+import React, { PureComponent } from 'react';
 import Spinner from './styles';
 
-const Loading = () => <Spinner />;
+class Loading extends PureComponent {
+  render() {
+    return <Spinner />;
+  }
+}
 
 export default Loading;

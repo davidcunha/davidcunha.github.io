@@ -19,6 +19,7 @@ export default createGlobalStyle`
     box-sizing: border-box;
     overflow-x: hidden;
     background-color: ${props => props.theme.colors.mineShaft};
+    cursor: none;
   }
 
   *, *:before, *:after {
@@ -52,7 +53,7 @@ export default createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-    overflow-wrap: break-word; /* Break long words by default */
+    overflow-wrap: break-word;
   }
 
   /* ==========================================================================
@@ -136,47 +137,72 @@ export default createGlobalStyle`
   }
 
   /* ==========================================================================
-    Cursor
+    Transition
   ========================================================================== */
 
-  .circle-cursor {
+  .transition {
+    width: 100vw;
+    height: 100vh;
     position: fixed;
+    z-index: 1000;
+    pointer-events: none;
+    left: 0;
+    top: 100%;
+  }
+
+  .transition .transition-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    border-radius: 50%;
-    pointer-events: none;
+    animation: anim-effect-3-1 1.5s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+    background-color: ${props => props.theme.colors.mineShaft};
   }
 
-  .circle-cursor--outer,
-  .circle-cursor--inner {
-    opacity: 0;
+  .transition .transition-layer:nth-child(2) {
+    animation-name: anim-effect-3-2;
+    background-color: ${props => props.theme.colors.codGray};
   }
 
-  .circle-cursor--outer {
-    width: 30px;
-    height: 30px;
-    z-index: 12000;
-    border: 2px solid ${props => props.theme.colors.white};
+  .transition .transition-layer:nth-child(3) {
+    animation-name: anim-effect-3-3;
+    background-color: ${props => props.theme.colors.alabaster};
   }
 
-  .circle-cursor--inner {
-    top: -2.5px;
-    left: -2.5px;
-    width: 5px;
-    height: 5px;
-    z-index: 11000;
-    background: ${props => props.theme.colors.white};
+  @keyframes anim-effect-3-1 {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    25%, 75% {
+      transform: translate3d(0, -100%, 0);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    100% {
+      transform: translate3d(0, -200%, 0);
+    }
   }
 
-  .circle-cursor--outer.visible {
-    opacity: 0.4;
-    transition: transform 50ms;
-    transition-timing-function: ease-out;
+  @keyframes anim-effect-3-2 {
+    0%, 12.5% {
+      transform: translate3d(0, 0, 0);
+    }
+    37.5%, 62.5% {
+      transform: translate3d(0, -100%, 0);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    87.5%, 100% {
+      transform: translate3d(0, -200%, 0);
+    }
   }
 
-  .circle-cursor--inner.visible {
-    opacity: 1;
-    transition: transform 50ms;
-    transition-timing-function: ease-out;
+  @keyframes anim-effect-3-3 {
+    0%, 25% {
+      transform: translate3d(0, 0, 0);
+      animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    }
+    75%, 100% {
+      transform: translate3d(0, -200%, 0);
+    }
   }
 `;

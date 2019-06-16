@@ -4,31 +4,40 @@ import { ThemeProvider } from 'styled-components';
 import RebootStyle from '../../shared/reboot';
 import GlobalStyle from '../../shared/globals';
 import variables from '../../shared/variables';
+import { CursorInner, CursorOuter } from './styles';
 
 class Layout extends PureComponent {
   static propTypes = {
     children: PropTypes.oneOfType([PropTypes.object, PropTypes.array]),
     backgroundColor: PropTypes.string,
+    isLoading: PropTypes.bool,
   };
 
   static defaulProps = {
     backgroundColor: 'dark',
   };
 
+  constructor(props) {
+    super(props);
+
+    this.cursorInnerRef = React.createRef();
+    this.cursorOuterRef = React.createRef();
+  }
+
   componentDidMount() {
-    const outerCursor = document.querySelector('.circle-cursor--outer');
-    const innerCursor = document.querySelector('.circle-cursor--inner');
-    const outerCursorBox = outerCursor.getBoundingClientRect();
+    const cursorOuter = this.cursorOuterRef.current;
+    const cursorInner = this.cursorInnerRef.current;
+    const cursorOuterBox = cursorOuter.getBoundingClientRect();
     let clientX = window.innerWidth / 2;
     let clientY = window.innerHeight / 2;
 
     document.addEventListener('mousemove', (e) => {
-      innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
-      innerCursor.classList.add('visible');
+      cursorInner.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      cursorInner.classList.add('visible');
 
-      outerCursor.style.transform = `translate(${clientX - outerCursorBox.width / 2}px, ${clientY
-        - outerCursorBox.height / 2}px)`;
-      outerCursor.classList.add('visible');
+      cursorOuter.style.transform = `translate(${clientX - cursorOuterBox.width / 2}px, ${clientY
+        - cursorOuterBox.height / 2}px)`;
+      cursorOuter.classList.add('visible');
 
       /* eslint-disable prefer-destructuring */
       clientX = e.clientX;
@@ -37,7 +46,7 @@ class Layout extends PureComponent {
     });
 
     requestAnimationFrame(() => {
-      innerCursor.style.transform = `translate(${clientX}px, ${clientY}px)`;
+      cursorInner.style.transform = `translate(${clientX}px, ${clientY}px)`;
     });
   }
 
@@ -47,8 +56,8 @@ class Layout extends PureComponent {
         <div>
           <RebootStyle />
           <GlobalStyle theme={variables} backgroundColor={this.props.backgroundColor} />
-          <div className="circle-cursor circle-cursor--inner" />
-          <div className="circle-cursor circle-cursor--outer" />
+          <CursorInner ref={this.cursorInnerRef} hide={this.props.isLoading} />
+          <CursorOuter ref={this.cursorOuterRef} hide={this.props.isLoading} />
           {this.props.children}
         </div>
       </ThemeProvider>
