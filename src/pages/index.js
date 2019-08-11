@@ -70,24 +70,6 @@ const About = props => (
           experience based in sunny Portugal. Interested in building scalable web apps and
           businesses that make people happy.
         </p>
-        <p>I love to:</p>
-        <p>
-          <span role="img" aria-label="emoji">
-            👥
-          </span>{' '}
-          Help Developers and Teams
-          <br />
-          <span role="img" aria-label="emoji">
-            👨‍💻
-          </span>{' '}
-          Write code
-          <br />
-          <span role="img" aria-label="emoji">
-            ✈️
-          </span>{' '}
-          Travel and experience new things
-          <br />
-        </p>
         <br />
         <p>
           Building a business isn&apos;t easy. Even worse a profitable one. As an Engineer close to
