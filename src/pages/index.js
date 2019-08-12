@@ -67,23 +67,29 @@ const About = props => (
       <div className="inner">
         <p>
           I&apos;m a professional Software Engineer and Scrum Master with more than 6 years of
-          experience based in sunny Portugal. Interested in building scalable web apps and
+          experience based in sunny Portugal, interested in building scalable web apps and
           businesses that make people happy.
         </p>
         <br />
         <p>
-          Building a business isn&apos;t easy. Even worse a profitable one. As an Engineer close to
-          business decisions and building features that can impact the happiness of end-users and
-          consequently product&apos;s growth, I get acquainted with the business domain I&apos;m
-          working on. Knowing how to explain technical decisions to non-tech-savvy, and how to help
-          businesses get the most value by asking the right questions, is what I believe is
-          fundamental to succeed.
+          Building a business isn&apos;t easy. Even worse a profitable one.
+          As an Engineer close to business decisions that can impact the happiness of end-users and consequently,
+          the product&apos;s growth, I help to get the most value by asking questions.<br />
+          I believe in transparency, inspection, and adaptation between team members and client, in order to be able to succeed.
+        </p>
+        <br />
+        <p>
+          In late 2016, I started an exciting project at Viana do Castelo, <a href="https://www.meetup.com/vianatechmeetups/" target="_blank" rel="noopener noreferrer"> Viana Tech Meetups</a>,
+          that brings tech meetups and workshops to a local community that until then didn&apos;t have events to attend and network.
+          Now with more than 600 members, 20 events, several companies involved,
+          and the support of the local university, we were able to bring speakers from companies
+          such as Talkdesk, Prozis, Netlify, InVision, Taxify/Bolt, Paddypower Betfair, Consensys, or Skyscanner.
         </p>
         <br />
         <p>
           <span role="img" aria-label="emoji">
-            📩{' '}
-          </span>
+            📩
+          </span>{' '}
           Feel free to contact me for projects and collaborations.
         </p>
         <Contact />
@@ -206,8 +212,6 @@ const About = props => (
         <p>
           With the experience acquired, I&apos;m now regularly giving training to small to medium
           sized teams, mentoring CS students and invited to teach in Northen Portugal Universities.
-          Besides mentorship, I also act as a facilitator between the Development team and the
-          Product Owner in order to build high-performance teams and excellent products.
         </p>
         <p>I&apos;m currently giving training in the following subjects:</p>
         <ul>
