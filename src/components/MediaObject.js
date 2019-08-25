@@ -10,9 +10,11 @@ const MediaObject = props => (
     </Link>
     <div className="content">
       <div className="inner">
-        <header className="major">
-          <h3>{props.title}</h3>
-        </header>
+        {props.title && (
+          <header className="major">
+            <h3>{props.title}</h3>
+          </header>
+        )}
         <p dangerouslySetInnerHTML={{ __html: props.description }} />
         <ul className="actions">
           <li>

@@ -125,7 +125,6 @@ const About = props => (
         <section id="one" className="spotlights">
           {[
             {
-              title: 'Process',
               url: 'process',
               description: 'I\'m an <strong>Agile</strong> fan. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.',
               img: props.data.process.childImageSharp.fluid,
@@ -133,7 +132,6 @@ const About = props => (
           ].map((section, key) => (
             <MediaObject
               key={`${key}-${section.url}`}
-              title={section.title}
               url={`${section.url}`}
               description={section.description}
               img={section.img}
