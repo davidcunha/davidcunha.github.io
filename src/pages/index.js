@@ -5,8 +5,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
-import IGFeed from '../components/IGFeed';
-import CaseStudy from '../components/CaseStudy';
+import MediaObject from '../components/MediaObject';
 import about from '../assets/images/about.jpg';
 
 const About = props => (
@@ -80,9 +79,9 @@ const About = props => (
         <br />
         <p>
           In late 2016, I started an exciting project at Viana do Castelo, <a href="https://www.meetup.com/vianatechmeetups/" target="_blank" rel="noopener noreferrer"> Viana Tech Meetups</a>,
-          that brings tech meetups and workshops to a local community that until then didn&apos;t have events to attend and network.
+          that brings tech meetups and workshops to a local community which until then didn&apos;t have events to attend and network.
           Now with more than 600 members, 20 events, several companies involved,
-          and the support of the local university, we were able to bring speakers from companies
+          and the support of the local university, we were able to host speakers from companies
           such as Talkdesk, Prozis, Netlify, InVision, Taxify/Bolt, Paddypower Betfair, Consensys, or Skyscanner.
         </p>
         <br />
@@ -126,20 +125,30 @@ const About = props => (
         </div>
         <br />
         <br />
-        <div className="quote">
-          <blockquote>
-            “Working with David, it&apos;s just a pleasure! I can easily say that he is the person
-            that I most respect professionally - hardworking, talented, caring, perfectionist,
-            trustworthy, humble - The truth is that I could go on with words to describe him.
-            Amazing talented people like David are hard to stick with you on your team because they
-            are never satisfied and always pushing the bar. I couldn&apos;t recommend him more.”
-          </blockquote>
-          <div className="author">
-            <strong>Ricardo Parente - CEO @ PICUS.</strong>
-          </div>
-        </div>
-        <br />
-        <br />
+      </div>
+      <div className="inner">
+        <header className="major">
+          <h3>Process</h3>
+        </header>
+        <section id="one" className="spotlights">
+          {[
+            {
+              title: 'Process',
+              url: 'process',
+              description: 'I\'m an Agile fan. However, like everything in this world, there is the good, the bad and the misunderstood. Every project and company is different, and the process needs to adapt to the needs of the product and team, and not always the way around.',
+              img: props.data.process.childImageSharp.fluid,
+            },
+          ].map((section, key) => (
+            <MediaObject
+              key={`${key}-${section.url}`}
+              title={section.title}
+              url={`${section.url}`}
+              description={section.description}
+              img={section.img}
+              button={'View Process'}
+            />
+          ))}
+        </section>
       </div>
       <div className="inner">
         <header className="major">
@@ -176,34 +185,16 @@ const About = props => (
               imgPosition: 'right',
             },
           ].map((caseStudy, key) => (
-            <CaseStudy
+            <MediaObject
               key={`${key}-${caseStudy.url}`}
               title={caseStudy.title}
-              url={caseStudy.url}
+              url={`/case-studies/${caseStudy.url}`}
               description={caseStudy.description}
               img={caseStudy.img}
+              button={'View Case Study'}
             />
           ))}
         </section>
-      </div>
-      <div className="inner">
-        <header className="major">
-          <h3>What I can help you with</h3>
-        </header>
-        <ul>
-          <li>I have an idea for a project. How should I approach it?</li>
-          <li>
-            We have a ton of bugs because we&apos;re not applying testing. What and how should I
-            test?
-          </li>
-          <li>I need to grow my team and/or implement processes</li>
-          <li>
-            What do you think about &lt;<em>tech-name-here</em>&gt;? Should we use it?
-          </li>
-          <li>We&apos;re shipping software, but we carry over every Sprint. What should we do?</li>
-          <li>How can I make this code work?</li>
-          <li>How can I improve this code?</li>
-        </ul>
       </div>
       <div className="inner">
         <header className="major">
@@ -218,11 +209,7 @@ const About = props => (
           <li>Git and Github</li>
           <li>Scrum</li>
           <li>Rapid development with Ruby on Rails</li>
-          <li>
-            <a href="https://jschool.io/" target="_blank" rel="noopener noreferrer">
-              JavaScript and Node.js introduction
-            </a>
-          </li>
+          <li>JavaScript and Node.js introduction</li>
           <li>How to build client-side experiences on reusable components with React</li>
           <li>Software Testing</li>
           <li>Web fundamentals - HTML, CSS, JavaScript, HTTP</li>
@@ -234,16 +221,14 @@ const About = props => (
           for pricing, and I&apos;ll be very happy to help you, your team or your students!
         </p>
         <p>
-          Ah! And every weekday, I&apos;m available for a direct or remote 30-minute free session
-          between 18:00-20:00 (GMT). Just contact me via Email to schedule it{' '}
+          Ah! And every weekday, I&apos;m available for a remote 30-minute free session
+          between 19:00-20:00 (GMT+1). Just contact me via <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> to schedule it{' '}
           <span role="img" aria-label="emoji">
             🤙
           </span>
         </p>
         <br />
         <Contact />
-        <br />
-        <IGFeed />
         <br />
         <br />
       </div>
@@ -258,6 +243,13 @@ About.propTypes = {
 export const query = graphql`
   query {
     about: file(relativePath: { eq: "about.jpg" }) {
+      childImageSharp {
+        fluid(maxWidth: 1024) {
+          ...GatsbyImageSharpFluid_withWebp_noBase64
+        }
+      }
+    }
+    process: file(relativePath: { eq: "process.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 1024) {
           ...GatsbyImageSharpFluid_withWebp_noBase64

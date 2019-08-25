@@ -5,7 +5,6 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
-import IGFeed from '../components/IGFeed';
 
 const Process = props => (
   <Layout>
@@ -20,13 +19,12 @@ const Process = props => (
     <div id="main">
       <div className="inner">
         <p>
-          I’m what they usually call a <em>process freak</em>. I love when I find an issue where a
-          small action or a more extensive guideline can improve productivity and results. And yes..
+          I love when I find an issue where a small action or a more extensive one can improve productivity and results. And yes..
           In the end, I do the math 😛
         </p>
         <p>
           <em>
-            Probably I could improve my team’s deliverables with <strong>code review</strong> or{' '}
+            Probably we could improve the team’s deliverables with <strong>code review</strong> or{' '}
             <strong>pair programming</strong>? Implement proper testing procedures via{' '}
             <strong>User Acceptance Testing</strong> or <strong>TDD</strong>? Could we reduce
             misinterpretations if we use another medium of communication? Learning more about X, Y,
@@ -36,21 +34,23 @@ const Process = props => (
         <p>
           As I saw in the past, there are always many questions, obstacles or bad practices that
           could be fixed right away, oh boy it can be overwhelming at a first stance… I first start
-          by <strong>drawing a time-bound goal I want to achieve</strong>. Where do I see this in 3
+          by <strong>drawing a time-bound goal we want to achieve</strong>. Where do we see this in 3
           months or 6 months, or 1 year? Time is important,{' '}
-          <strong>time creates accountability</strong>. Then I chunk it into small actionable pieces
-          - not too much, not too little. It helps me get focused and consistent, monitor the
+          <strong>time creates accountability</strong>. Then we chunk it into small actionable pieces
+          - not too much, not too little. It helps us get focused and consistent, test, monitor the
           progress, and measure the impact of an applied tactic towards the higher goal.
         </p>
+        <br />
+        <Contact />
       </div>
       <div className="inner">
         <header className="major">
           <h3>Methodology</h3>
         </header>
         <p>
-          I’m an <strong>Agile</strong> fan, well I said it. However, like everything in this world,
+          I’m an <strong>Agile</strong> fan. However, like everything in this world,
           there is the good, the bad and the misunderstood. Every project and company is different,
-          and the process needs to adapt to the needs of the product and team, not the way around.
+          and the process needs to adapt to the needs of the product and team, and not always the way around.
         </p>
         <p>I believe in:</p>
         <ul>
@@ -60,7 +60,7 @@ const Process = props => (
           <li>Daily communication to build trust</li>
           <li>Manage priorities and visualize progress</li>
           <li>Discuss successes, failures, and plans</li>
-          <li>Test Assumptions, and get validation with small deliverables</li>
+          <li>Test Assumptions, and get validation with small deliverables (<a href="https://www.scrum.org" target="_blank" rel="noopener noreferrer">Scrum</a>, <a href="http://theleanstartup.com/" target="_blank" rel="noopener noreferrer">Lean Startup</a>)</li>
         </ul>
       </div>
       <div className="inner">
@@ -175,6 +175,9 @@ const Process = props => (
           <em>ops</em> side, regarding cloud services, such as{' '}
           <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">
             AWS
+          </a>,{' '}
+          <a href="https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment" target="_blank" rel="noopener noreferrer">
+            CI/CD
           </a>
           , reverse proxies like{' '}
           <a href="https://www.nginx.com/" target="_blank" rel="noopener noreferrer">
@@ -214,9 +217,9 @@ const Process = props => (
         <ul>
           <li>
             <a href="http://trello.com" target="_blank" rel="noopener noreferrer">
-              Trello
+              JIRA or Trello
             </a>{' '}
-            - simple and easy to use planning and project management
+            - The former, the most used tool for Scrum projects, and the latter, a simple and easy to use tool for organizing tasks and collaboration
           </li>
           <li>
             <a href="https://slack.com" target="_blank" rel="noopener noreferrer">
@@ -257,49 +260,8 @@ const Process = props => (
             - testing with real mobile devices and browsers
           </li>
         </ul>
-      </div>
-      <div className="inner">
-        <header className="major">
-          <h3>Writings</h3>
-        </header>
-        <p>
-          Writing is the toughest and best thing I could do to improve my craftsmanship.{' '}
-          <strong>
-            I’m only sure that I know something when I{' '}
-            <a
-              href="https://instagram.com/davidcunha.xyz"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              write
-            </a>{' '}
-            or teach about it
-          </strong>
-          .
-        </p>
-        <p>
-          I usually write about tech, processes, books and recent learnings in my{' '}
-          <a href="https://instagram.com/davidcunha.xyz" target="_blank" rel="noopener noreferrer">
-            Instagram
-          </a>{' '}
-          account and/or{' '}
-          <a href="https://medium.com/@_davidcunha" target="_blank" rel="noopener noreferrer">
-            Medium
-          </a>
-          .
-        </p>
-        <p>
-          Feel free to comment, clap, and{' '}
-          <a href="mailto:davidgoncalvescunha@gmail.com">mail me here</a>, if you want to discuss
-          more about a posted topic{' '}
-          <span role="img" aria-label="emoji">
-            🤙
-          </span>
-        </p>
         <br />
         <Contact />
-        <br />
-        <IGFeed />
         <br />
         <br />
       </div>

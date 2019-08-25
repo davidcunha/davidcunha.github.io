@@ -3,9 +3,9 @@ import PropTypes from 'prop-types';
 import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 
-const CaseStudy = props => (
-  <section className="case-study">
-    <Link to={`/case-studies/${props.url}`} className="image">
+const MediaObject = props => (
+  <section className="media-object">
+    <Link to={props.url} className="image">
       <Img fluid={props.img} />
     </Link>
     <div className="content">
@@ -16,8 +16,8 @@ const CaseStudy = props => (
         <p dangerouslySetInnerHTML={{ __html: props.description }} />
         <ul className="actions">
           <li>
-            <Link to={`/case-studies/${props.url}`} className="button special">
-              View Case Study
+            <Link to={props.url} className="button special">
+              {props.button}
             </Link>
           </li>
         </ul>
@@ -26,11 +26,12 @@ const CaseStudy = props => (
   </section>
 );
 
-CaseStudy.propTypes = {
+MediaObject.propTypes = {
   title: PropTypes.string,
   url: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.object,
+  button: PropTypes.string,
 };
 
-export default CaseStudy;
+export default MediaObject;
