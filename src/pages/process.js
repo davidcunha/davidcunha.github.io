@@ -48,14 +48,13 @@ const Process = props => (
           <h3>Methodology</h3>
         </header>
         <p>
-          I’m an <strong>Agile</strong> fan. However, like everything in this world,
-          there is the good, the bad and the misunderstood. Every project and company is different,
-          and the process needs to adapt to the needs of the product and team, and not always the way around.
+          I’m an <strong>Agile</strong> fan. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.
         </p>
         <p>I believe in:</p>
         <ul>
+          <li>Focus on customer&apos;s satisfaction</li>
           <li>Well-defined roles and workflows</li>
-          <li>Close collaboration with team members and client</li>
+          <li>Close collaboration with team members and customers</li>
           <li>Flexibility to adapt during the development cycle</li>
           <li>Daily communication to build trust</li>
           <li>Manage priorities and visualize progress</li>
