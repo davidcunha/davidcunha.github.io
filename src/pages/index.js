@@ -78,6 +78,13 @@ const About = props => (
         </p>
         <br />
         <p>
+          In late 2016, I started an exciting project at Viana do Castelo, <a href="https://www.meetup.com/vianatechmeetups/" target="_blank" rel="noopener noreferrer">Viana Tech Meetups</a>,
+          that brings tech meetups and workshops to a local community which until then didn&apos;t have events to attend and network.
+          Now with more than 600 members, 20 events, several companies involved, and the support of the local university,
+          we were able to host speakers from companies such as Talkdesk, Prozis, Netlify, InVision, Taxify/Bolt, Paddypower Betfair, Consensys, or Skyscanner.
+        </p>
+        <br />
+        <p>
           <span role="img" aria-label="emoji">
             📩
           </span>{' '}
@@ -126,7 +133,7 @@ const About = props => (
           {[
             {
               url: 'process',
-              description: 'I\'m an <strong>Agile</strong> practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.',
+              description: 'I\'m an Agile practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.',
               img: props.data.process.childImageSharp.fluid,
             },
           ].map((section, key) => (

@@ -19,25 +19,22 @@ const Process = props => (
     <div id="main">
       <div className="inner">
         <p>
-          I love when I find an issue where a small action or a more extensive one can improve productivity and results. And yes..
-          In the end, I do the math 😛
+          I enjoy when a small action or a more extensive one can improve productivity, results, and in consequence, customer&apos;s satisfaction.
         </p>
         <p>
           <em>
-            Probably we could improve the team’s deliverables with <strong>code review</strong> or{' '}
-            <strong>pair programming</strong>? Implement proper testing procedures via{' '}
-            <strong>User Acceptance Testing</strong> or <strong>TDD</strong>? Could we reduce
-            misinterpretations if we use another medium of communication? Learning more about X, Y,
-            Z and getting that training in the platform the client is currently using?
+            Probably we could improve the team’s deliverables with code review or pair programming?
+            Working towards Continuous Delivery and not pushing stories for testing only one day before the Sprint ends?
+            Could we reduce misinterpretations if we use another medium of communication? Learning more about X, Y, Z, and getting the appropriate training on the platform the client is currently using?
           </em>
         </p>
         <p>
           As I saw in the past, there are always many questions, obstacles or bad practices that
-          could be fixed right away, oh boy it can be overwhelming… I first start
-          by listening and observing the current situation without any prescription in mind.
-          Then here comes the opportuniy to <strong>draw a time-bound goal we want to achieve</strong>.
-          Where do we see this in 2 weeks, 1 month, or 6 months? Time is important, <strong>time creates accountability</strong>.
-          Then we chunk it into small actionable pieces - not too much, not too little. It helps us get focused and consistent, test, and measure the impact of an applied tactic towards the higher goal.
+          could be fixed right away, but it can be overwhelming... I first start by listening and observing the current situation
+          without any prescription in mind. Then comes the opportunity to draw a time-bound goal we want to achieve.
+          Where do we see this in 2 weeks, 1 month, or 6 months? Time is important; time creates accountability.
+          Finally chunk it into small actionable pieces - not too much, not too little.
+          It helps us get focused and consistent, test, and measure the impact of an applied tactic towards the higher goal.
         </p>
         <br />
         <Contact />
@@ -47,7 +44,7 @@ const Process = props => (
           <h3>Methodology</h3>
         </header>
         <p>
-          I’m an <strong>Agile</strong> practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.
+          I’m an Agile practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.
         </p>
         <p>I believe in:</p>
         <ul>
@@ -153,16 +150,16 @@ const Process = props => (
         <p>
           Node.js enables building fast, real-time, scalable network applications, as it’s capable
           of handling a vast number of{' '}
-          <strong>
+
             simultaneous connections with high throughput, consequently providing high scalability
-          </strong>
+
           . On the frontend side, React provides a client-side experience on a single-page
           application with small,{' '}
-          <strong>reusable components, consistent behavior, and rich interactions</strong>.
+          reusable components, consistent behavior, and rich interactions.
         </p>
         <p>
           Finally, Next.js comes as the React framework for Server-Side rendering with an{' '}
-          <strong>opinionated setup for SEO-friendly websites</strong>. It’s fast, ready for
+          opinionated setup for SEO-friendly websites. It’s fast, ready for
           production, and{' '}
           <a href="https://zeit.co/" target="_blank" rel="noopener noreferrer">
             ZEIT
@@ -202,13 +199,13 @@ const Process = props => (
         </header>
         <p>
           Most of the time me, the team, or the client are working in different locations. Therefore{' '}
-          <strong>
+
             the way we communicate is the most important factor for the success of the project
-          </strong>
+
           . Asynchronous channels, meaning sometimes the other person is not immediately available
           to respond, are useful to include frequent updates on current work, and documentation
           available for everyone to contribute to. However{' '}
-          <strong>major decisions must be performed over video calls, on even in person</strong>, as
+          major decisions must be performed over video calls, on even in person, as
           for those cases the tone of voice and body language are beneficial to develop relationship
           and trust.
         </p>
@@ -227,8 +224,8 @@ const Process = props => (
             - team communication and collaboration
           </li>
           <li>
-            <a href="http://appear.in" target="_blank" rel="noopener noreferrer">
-              Appear.in
+            <a href="https://whereby.com" target="_blank" rel="noopener noreferrer">
+              Whereby
             </a>{' '}
             or{' '}
             <a href="https://www.skype.com/en/" target="_blank" rel="noopener noreferrer">

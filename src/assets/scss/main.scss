@@ -3,7 +3,7 @@
 @import "libs/mixins";
 @import "libs/skel";
 @import "../css/font-awesome.min.css";
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono");
+@import "fonts";
 @import "css-grid";
 
 @include skel-breakpoints(
@@ -13,14 +13,14 @@
     medium: "(max-width: 980px)",
     small: "(max-width: 736px)",
     xsmall: "(max-width: 480px)",
-    xxsmall: "(max-width: 360px)",
+    xxsmall: "(max-width: 360px)"
   )
 );
 
 @include skel-layout(
   (
     reset: "full",
-    boxModel: "border",
+    boxModel: "border"
   )
 );
 
