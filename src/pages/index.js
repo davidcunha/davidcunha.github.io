@@ -78,13 +78,6 @@ const About = props => (
         </p>
         <br />
         <p>
-          In late 2016, I started an exciting project at Viana do Castelo, <a href="https://www.meetup.com/vianatechmeetups/" target="_blank" rel="noopener noreferrer">Viana Tech Meetups</a>,
-          that brings tech meetups and workshops to a local community which until then didn&apos;t have events to attend and network.
-          Now with more than 600 members, 20 events, several companies involved, and the support of the local university,
-          we were able to host speakers from companies such as Talkdesk, Prozis, Netlify, InVision, Taxify/Bolt, Paddypower Betfair, Consensys, or Skyscanner.
-        </p>
-        <br />
-        <p>
           <span role="img" aria-label="emoji">
             📩
           </span>{' '}
@@ -210,16 +203,14 @@ const About = props => (
           <h3>Training</h3>
         </header>
         <p>
-          With the experience acquired, I&apos;m now regularly giving training to small to medium
-          sized teams, mentoring CS students and invited to teach in Northen Portugal Universities.
+          With the experience acquired during the last years, I&apos;m regularly giving training to small to medium
+          sized teams, and mentoring students from Northern Portugal Universities.
         </p>
         <p>I&apos;m currently giving training in the following subjects:</p>
         <ul>
-          <li>Git and Github</li>
           <li>Scrum</li>
-          <li>Rapid development with Ruby on Rails</li>
           <li>JavaScript and Node.js introduction</li>
-          <li>How to build client-side experiences on reusable components with React</li>
+          <li>How to build client-side experiences with React</li>
           <li>Software Testing</li>
           <li>Web fundamentals - HTML, CSS, JavaScript, HTTP</li>
         </ul>
