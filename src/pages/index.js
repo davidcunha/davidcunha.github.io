@@ -126,7 +126,7 @@ const About = props => (
           {[
             {
               url: 'process',
-              description: 'I\'m an <strong>Agile</strong> fan. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.',
+              description: 'I\'m an <strong>Agile</strong> practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.',
               img: props.data.process.childImageSharp.fluid,
             },
           ].map((section, key) => (

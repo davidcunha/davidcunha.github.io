@@ -28,17 +28,16 @@ const Process = props => (
             <strong>pair programming</strong>? Implement proper testing procedures via{' '}
             <strong>User Acceptance Testing</strong> or <strong>TDD</strong>? Could we reduce
             misinterpretations if we use another medium of communication? Learning more about X, Y,
-            Z and getting that certification in the platform the client is currently using?
+            Z and getting that training in the platform the client is currently using?
           </em>
         </p>
         <p>
           As I saw in the past, there are always many questions, obstacles or bad practices that
-          could be fixed right away, oh boy it can be overwhelming at a first stance… I first start
-          by <strong>drawing a time-bound goal we want to achieve</strong>. Where do we see this in 3
-          months or 6 months, or 1 year? Time is important,{' '}
-          <strong>time creates accountability</strong>. Then we chunk it into small actionable pieces
-          - not too much, not too little. It helps us get focused and consistent, test, monitor the
-          progress, and measure the impact of an applied tactic towards the higher goal.
+          could be fixed right away, oh boy it can be overwhelming… I first start
+          by listening and observing the current situation without any prescription in mind.
+          Then here comes the opportuniy to <strong>draw a time-bound goal we want to achieve</strong>.
+          Where do we see this in 2 weeks, 1 month, or 6 months? Time is important, <strong>time creates accountability</strong>.
+          Then we chunk it into small actionable pieces - not too much, not too little. It helps us get focused and consistent, test, and measure the impact of an applied tactic towards the higher goal.
         </p>
         <br />
         <Contact />
@@ -48,12 +47,13 @@ const Process = props => (
           <h3>Methodology</h3>
         </header>
         <p>
-          I’m an <strong>Agile</strong> fan. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.
+          I’m an <strong>Agile</strong> practitioner. However, like everything in this world, there is the good, the bad, and the misunderstood. Every project and company is different, and the process should be adjusted to the needs of the product and team, however, while preserving the Agile values and principles.
         </p>
         <p>I believe in:</p>
         <ul>
           <li>Focus on customer&apos;s satisfaction</li>
           <li>Well-defined roles and workflows</li>
+          <li>Continuous delivery and feedback</li>
           <li>Close collaboration with team members and customers</li>
           <li>Flexibility to adapt during the development cycle</li>
           <li>Daily communication to build trust</li>
