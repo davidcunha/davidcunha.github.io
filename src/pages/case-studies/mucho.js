@@ -47,7 +47,7 @@ const CaseStudy = props => (
           The focus was building new personalization features, such as recommendation feed, recipes
           of the day, adding other types of media to the recipes representation, like videos, aiming
           to offer a better experience for home’s cooks.{' '}
-          <a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://apps.apple.com/us/app/mucho-recipes-groceries/id1052747180" target="_blank" rel="noopener noreferrer">
             Mucho
           </a>{' '}
           won the attention of the press when it was selected to join JLab to build a use-case for{' '}

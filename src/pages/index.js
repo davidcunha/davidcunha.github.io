@@ -150,7 +150,7 @@ const About = props => (
               title: 'Mucho',
               url: 'mucho',
               description:
-                '<a href="https://www.getmucho.com" target="_blank" rel="noopener noreferrer">Mucho</a> provides a personalized experience for grocery shopping with inspirational recipes contributed by a trusted community of foodies. With a few clicks, ingredients for recipes and breakfast &amp; snacks are ordered, and a selected supermarket will delivery the order to the customer&apos;s doorstep.',
+                '<a href="https://apps.apple.com/us/app/mucho-recipes-groceries/id1052747180" target="_blank" rel="noopener noreferrer">Mucho</a> provides a personalized experience for grocery shopping with inspirational recipes contributed by a trusted community of foodies. With a few clicks, ingredients for recipes and breakfast &amp; snacks are ordered, and a selected supermarket will delivery the order to the customer&apos;s doorstep.',
               img: props.data.caseStudy1.childImageSharp.fluid,
             },
             {
