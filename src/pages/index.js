@@ -60,12 +60,12 @@ const About = props => (
       </script>
     </Helmet>
 
-    <Banner title="Hi, my name is David" bgImg={props.data.about.childImageSharp.fluid} />
+    <Banner title="Software Engineer and Scrum Master" bgImg={props.data.about.childImageSharp.fluid} />
 
     <div id="main">
       <div className="inner">
         <p>
-          I&apos;m a professional Software Engineer and Scrum Master with more than 6 years of
+          Hello, my name is David. I&apos;m a professional Software Engineer and Scrum Master with more than 6 years of
           experience based in sunny Portugal, interested in building scalable web apps and
           businesses that make people happy.
         </p>
@@ -73,7 +73,7 @@ const About = props => (
         <p>
           Building a business isn&apos;t easy. Even worse a profitable one.
           As an Engineer close to business decisions that can impact the happiness of end-users and consequently,
-          the product&apos;s growth, I help to get the most value by asking questions.<br />
+          the product&apos;s growth, I help to get the most value by listening, observing, and asking questions.<br />
           I believe in transparency, inspection, and adaptation between team members and client, in order to be able to succeed.
         </p>
         <br />
