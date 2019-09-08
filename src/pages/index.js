@@ -212,7 +212,7 @@ const About = props => (
           <li>JavaScript and Node.js introduction</li>
           <li>How to build client-side experiences with React</li>
           <li>Software Testing</li>
-          <li>Web fundamentals - HTML, CSS, JavaScript, HTTP</li>
+          <li>Web fundamentals - HTML, CSS, JavaScript, HTTP, Git</li>
         </ul>
         <p>
           <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">

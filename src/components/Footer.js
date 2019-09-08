@@ -27,16 +27,6 @@ const Footer = () => (
         </li>
         <li>
           <a
-            href="https://medium.com/@_davidcunha"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="icon alt fa-medium"
-          >
-            <span className="label">Medium</span>
-          </a>
-        </li>
-        <li>
-          <a
             href="https://twitter.com/_davidcunha"
             target="_blank"
             rel="noopener noreferrer"
