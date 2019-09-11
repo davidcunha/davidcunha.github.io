@@ -5,6 +5,7 @@ import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import Contact from '../components/Contact';
+import IGFeed from '../components/IGFeed';
 
 const Process = props => (
   <Layout>
@@ -258,8 +259,12 @@ const Process = props => (
         </ul>
         <br />
         <Contact />
-        <br />
-        <br />
+      </div>
+      <div className="inner">
+        <header className="major">
+          <h3>Instagram Feed</h3>
+        </header>
+        <IGFeed />
       </div>
     </div>
   </Layout>

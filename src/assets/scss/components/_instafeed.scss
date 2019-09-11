@@ -8,7 +8,7 @@
 
   .post {
     position: relative;
-    margin-bottom: 2.4em;
+    border: 1px solid white;
     width: 33%;
 
     @include breakpoint(xsmall) {
