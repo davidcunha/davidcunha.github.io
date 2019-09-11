@@ -30,17 +30,17 @@ const Process = props => (
           </em>
         </p>
         <p>
-          As I saw in the past, there are always many questions, obstacles or bad practices that
+          As I saw in the past, there are always many questions, obstacles, or bad practices that
           could be fixed right away, but it can be overwhelming... I first start by listening and observing the current situation
           without any prescription in mind. Then comes the opportunity to draw a time-bound goal we want to achieve.
           Where do we see this in 2 weeks, 1 month, or 6 months? Time is important; time creates accountability.
-          Finally chunk it into small actionable pieces - not too much, not too little.
+          Finally, chunk it into small actionable pieces - not too much, not too little.
           It helps us get focused and consistent, test, and measure the impact of an applied tactic towards the higher goal.
         </p>
         <br />
         <Contact />
       </div>
-      <div className="inner">
+      <div id="methodology" className="inner">
         <header className="major">
           <h3>Methodology</h3>
         </header>
@@ -60,7 +60,7 @@ const Process = props => (
           <li>Test Assumptions, and get validation with small deliverables (<a href="https://www.scrum.org" target="_blank" rel="noopener noreferrer">Scrum</a>, <a href="http://theleanstartup.com/" target="_blank" rel="noopener noreferrer">Lean Startup</a>)</li>
         </ul>
       </div>
-      <div className="inner">
+      <div id="software-stack" className="inner">
         <header className="major">
           <h3>Software Stack</h3>
         </header>
@@ -150,13 +150,8 @@ const Process = props => (
         </ul>
         <p>
           Node.js enables building fast, real-time, scalable network applications, as it’s capable
-          of handling a vast number of{' '}
-
-            simultaneous connections with high throughput, consequently providing high scalability
-
-          . On the frontend side, React provides a client-side experience on a single-page
-          application with small,{' '}
-          reusable components, consistent behavior, and rich interactions.
+          of handling a vast number of simultaneous connections with high throughput, consequently providing high scalability.
+          On the frontend side, React provides a client-side experience on a single-page application with small, reusable components, consistent behavior, and rich interactions.
         </p>
         <p>
           Finally, Next.js comes as the React framework for Server-Side rendering with an{' '}
@@ -194,21 +189,17 @@ const Process = props => (
           </li>
         </ul>
       </div>
-      <div className="inner">
+      <div id="tools" className="inner">
         <header className="major">
           <h3>Tools</h3>
         </header>
         <p>
-          Most of the time me, the team, or the client are working in different locations. Therefore{' '}
-
-            the way we communicate is the most important factor for the success of the project
-
-          . Asynchronous channels, meaning sometimes the other person is not immediately available
+          Most of the time, me, the team, or the client are working in different locations.
+          Therefore the way we communicate is the most important factor for the success of the project.
+          Asynchronous channels, meaning sometimes the other person is not immediately available
           to respond, are useful to include frequent updates on current work, and documentation
-          available for everyone to contribute to. However{' '}
-          major decisions must be performed over video calls, on even in person, as
-          for those cases the tone of voice and body language are beneficial to develop relationship
-          and trust.
+          available for everyone to contribute to. However, major decisions must be performed over video calls,
+          on even in person, as for those cases, the tone of voice and body language are beneficial to develop relationship and trust.
         </p>
         <p>From the myriad of tools out there, I use:</p>
         <ul>
@@ -260,7 +251,7 @@ const Process = props => (
         <br />
         <Contact />
       </div>
-      <div className="inner">
+      <div id="insta-feed" className="inner">
         <header className="major">
           <h3>Instagram Feed</h3>
         </header>

@@ -86,7 +86,7 @@ const About = props => (
         </p>
         <Contact />
       </div>
-      <div className="inner">
+      <div id="testimonials" className="inner">
         <header className="major">
           <h3>Testimonials</h3>
         </header>
@@ -119,7 +119,7 @@ const About = props => (
         <br />
         <br />
       </div>
-      <div className="inner">
+      <div id="process" className="inner">
         <header className="major">
           <h3>Process</h3>
         </header>
@@ -141,7 +141,7 @@ const About = props => (
           ))}
         </section>
       </div>
-      <div className="inner">
+      <div id="case-studies" className="inner">
         <header className="major">
           <h3>Case Studies</h3>
         </header>
@@ -165,7 +165,7 @@ const About = props => (
               title: 'Cocktail Experience',
               url: 'cocktail-experience',
               description:
-                'Cocktail Experience (client&apos;s name and website disclosed) provides a unique online shopping experience to create and deliver customized cocktails.From flavors to spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or select a bartender recommendation to be quickly delivered to their doorstep for a wonderful party.',
+                'Cocktail Experience (client&apos;s name and website disclosed) provides a unique online shopping experience to create and deliver customized cocktails. From flavors to spirits, liqueurs, wine, or garnish, customers can build a cocktail step by step or select a bartender recommendation to be quickly delivered to their doorstep for a wonderful party.',
               img: props.data.caseStudy3.childImageSharp.fluid,
             },
             {
@@ -187,7 +187,7 @@ const About = props => (
           ))}
         </section>
       </div>
-       <div className="inner">
+       <div id="initiatives" className="inner">
         <header className="major">
           <h3>Initiatives</h3>
         </header>
@@ -199,13 +199,12 @@ const About = props => (
           such as Talkdesk, Prozis, Netlify, InVision, Taxify/Bolt, Paddypower Betfair, Consensys, or Skyscanner.
         </p>
       </div>
-      <div className="inner">
+      <div id="training" className="inner">
         <header className="major">
           <h3>Training</h3>
         </header>
         <p>
-          With the experience acquired during the last years, I&apos;m regularly giving training to small to medium
-          sized teams, and mentoring students from Northern Portugal Universities.
+          With the experience acquired during the last years, I&apos;m regularly giving training to small to medium-sized teams, and mentoring students from Northern Portugal Universities.
         </p>
         <p>I&apos;m currently giving training in the following subjects:</p>
         <ul>
@@ -219,10 +218,10 @@ const About = props => (
           <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">
             Mail me here
           </a>{' '}
-          for pricing, and I&apos;ll be very happy to help you, your team or your students!
+          for pricing, and I&apos;ll be very happy to help you, your team, or your students!
         </p>
         <p>
-          Ah! And every weekday, I&apos;m available for a remote 30-minute free session
+          Ah! And, every weekday, I&apos;m available for a remote 30-minute free session
           between 19:00-20:00 (GMT+1). Just contact me via <a href="mailto:davidgoncalvescunha@gmail.com" target="_blank" rel="noopener noreferrer">Email</a> to schedule it{' '}
           <span role="img" aria-label="emoji">
             🤙
@@ -231,7 +230,7 @@ const About = props => (
         <br />
         <Contact />
       </div>
-      <div className="inner">
+      <div id="insta-feed" className="inner">
         <header className="major">
           <h3>Instagram Feed</h3>
         </header>
