@@ -204,7 +204,7 @@ const About = props => (
           <h3>Training</h3>
         </header>
         <p>
-          With the experience acquired during the last years, I&apos;m regularly giving training to small to medium-sized teams, and mentoring students from Northern Portugal Universities.
+          With the experience acquired during the last years, I&apos;m regularly training small to medium-sized teams, and mentoring students from Northern Portugal Universities.
         </p>
         <p>I&apos;m currently giving training in the following subjects:</p>
         <ul>
@@ -232,7 +232,7 @@ const About = props => (
       </div>
       <div id="insta-feed" className="inner">
         <header className="major">
-          <h3>Instagram Feed</h3>
+          <h3>Knowledge Sharing</h3>
         </header>
         <IGFeed />
       </div>

@@ -253,7 +253,7 @@ const Process = props => (
       </div>
       <div id="insta-feed" className="inner">
         <header className="major">
-          <h3>Instagram Feed</h3>
+          <h3>Knowledge Sharing</h3>
         </header>
         <IGFeed />
       </div>
