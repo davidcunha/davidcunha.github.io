@@ -66,12 +66,12 @@ const CaseStudy = props => (
         </p>
         <p>
           Lately, we forked the codebase and created a new version of the app/backend for Colombia
-          costumers, which is an emerging market for foodies. This operation required the setup of
+          customers, which is an emerging market for foodies. This operation required the setup of
           testing and production environments, as a Git workflow, adequate for an easy development
           process.
         </p>
         <p>
-          Our methodology included weekly Sprints and User Acceptance Testing for each feature/fix.
+          Our methodology included fortnightly Sprints and User Acceptance Testing.
         </p>
       </div>
       <div className="inner">

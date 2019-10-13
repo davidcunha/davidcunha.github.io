@@ -15,7 +15,7 @@ class IGFeed extends React.Component {
         </div>
       `,
       sortBy: 'most-recent',
-      limit: 6,
+      limit: 9,
       links: false,
     });
     userFeed.run();

@@ -66,7 +66,7 @@ const CaseStudy = props => (
           review before going live for the delight of the client’s customers.
         </p>
         <p>
-          Our methodology included weekly Sprints, User Acceptance Testing for each feature/fix,
+          Our methodology included weekly Sprints, User Acceptance Testing,
           Pair Programming, Code Review, Continuous Integration, and Continuous Delivery.
         </p>
       </div>
