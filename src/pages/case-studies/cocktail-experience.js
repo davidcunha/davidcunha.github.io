@@ -28,8 +28,9 @@ const CaseStudy = props => (
           <h3>Services</h3>
         </header>
         <ul>
-          <li>Frontend development</li>
+          <li>Scrum Master</li>
           <li>Technical Lead</li>
+          <li>Frontend development</li>
         </ul>
         <br />
         <Contact />
@@ -64,6 +65,9 @@ const CaseStudy = props => (
         <p>
           In the end, we were able to successfully deliver the cocktail experience for a final
           review before going live for the delight of the client’s customers.
+        </p>
+        <p>
+          During the development of the frontend platform, I worked closely with the Product Owner in order to focus on bringing the most value for the e-commerce platform&apos;s clients. The team and stakeholders were already quite familiar with the success of Scrum in past projects. Besides some impediment removal and facilitation, my contribution as a Scrum Master was quite simple and the results were successful.
         </p>
         <p>
           Our methodology included weekly Sprints, User Acceptance Testing,

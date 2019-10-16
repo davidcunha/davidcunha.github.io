@@ -24,6 +24,7 @@ const CaseStudy = props => (
           <h3>Services</h3>
         </header>
         <ul>
+          <li>Scrum Master</li>
           <li>Backend and API development</li>
           <li>AWS setup and management</li>
         </ul>
@@ -44,7 +45,10 @@ const CaseStudy = props => (
           development.
         </p>
         <p>
-          The focus was building new personalization features, such as recommendation feed, recipes
+          At the same time, the vision was building a small team of developers and work with an Agile mindset step by step by implementing the Scrum framework. Besides the technical development responsibilities, I acted as a facilitator and change agent in the small organization, working closely with the Product Owner in order to focus on bringing the most value for Mucho&apos;s customers.
+        </p>
+        <p>
+          Regarding the product, we focused on building new personalization features, such as recommendation feed, recipes
           of the day, adding other types of media to the recipes representation, like videos, aiming
           to offer a better experience for home’s cooks.{' '}
           <a href="https://apps.apple.com/us/app/mucho-recipes-groceries/id1052747180" target="_blank" rel="noopener noreferrer">
@@ -71,7 +75,8 @@ const CaseStudy = props => (
           process.
         </p>
         <p>
-          Our methodology included fortnightly Sprints and User Acceptance Testing.
+          Our methodology included fortnightly Sprints, User Acceptance Testing, and Continuous
+          Delivery.
         </p>
       </div>
       <div className="inner">

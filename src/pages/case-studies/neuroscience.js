@@ -29,9 +29,10 @@ const CaseStudy = props => (
           <h3>Services</h3>
         </header>
         <ul>
+          <li>Scrum Master</li>
+          <li>Technical Lead</li>
           <li>Frontend development</li>
           <li>Backend and API development</li>
-          <li>Technical Lead</li>
         </ul>
         <br />
         <Contact />
@@ -112,6 +113,9 @@ const CaseStudy = props => (
           while bugs and small adjustments were developed to match the client&apos;s expectations.
         </p>
         <br />
+        <p>
+          During the project, I worked closely with both Product Owners in order to focus on bringing the most value for initial users. Some members of the development team and both Product Owners weren&apos;t yet acquainted with Scrum. Therefore, I acted as a coach and mentor in several situations until all members understood the values and principles of Agile. Regarding the organization, the Agile mindset was still misunderstood with Waterfall management disguised as Scrum. Unsuccessfully, even with the good results accomplished during the project, I wasn&apos;t able to act as a change agent that could impact the future of how the client would build future endeavors.
+        </p>
         <p>
           Our methodology included fortnightly Sprints, User Acceptance Testing, Pair Programming, Code Review, Continuous Integration, and Continuous
           Delivery.
